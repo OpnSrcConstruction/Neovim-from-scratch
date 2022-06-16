@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "vim-airline/vim-airline" -- Plugin to give a much blingier neo-vim status-line, with  themes available for GruvBox/CodeDark.
   use "mhinz/vim-startify"      -- Neo-vim customizable Neo-vim start-page, w/ bookmarks/ascii cow programming humor each launch/re-load.
-  use "yggdroot/indentline"     -- A great fct. to visualize layers of column/vertical alignment groups of code.
+  -- use "yggdroot/indentline"     -- A great fct. to visualize layers of column/vertical alignment groups of code.
   use "rafi/awesome-vim-colorschemes"  -- Various vim-colour schemes.
   use "ryanoasis/vim-devicons"     -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"         -- great tag/code-encapsulator plugin.
