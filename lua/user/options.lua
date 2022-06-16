@@ -55,6 +55,6 @@ local options = {
   vim.opt.shortmess:append "I"                    -- Set No Intro-message for Neo-vim.
 
 -- vim.cmd Passes strings, that will be interpreted as vim-script.
--- vim.cmd "set whichwrap+=<,>,[,],h,l" Want to find out what it does, before blindly enabling it.
+  vim.cmd "set whichwrap+=<,>,[,],h,l" -- This wraps lines with w/ h-l/<-|-> arrows in command/insert-mode.
   vim.cmd [[set iskeyword+=-]] -- Will treat words with a dash as part of a single word.
 --vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
