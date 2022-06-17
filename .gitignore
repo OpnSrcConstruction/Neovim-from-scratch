@@ -39,5 +39,7 @@ luac.out
 *.x86_64
 *.hex
 
+# Vim auto-save files.
+*~
 
 plugin/packer_compiled.lua
