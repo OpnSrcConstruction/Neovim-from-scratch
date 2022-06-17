@@ -117,11 +117,10 @@ cmp.setup {
     select = false,
   },
   experimental = {
-    ghost_text = false,
+    ghost_text = true,
     native_menu = false,
   },
 }
-
 
   -- Was giving me errors...
   -- TODO Find out what the documentation function does precisely,
