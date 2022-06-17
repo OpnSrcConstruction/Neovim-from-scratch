@@ -38,33 +38,40 @@ packer.init {
   },
 }
 
--- Install your plugins here
+-- Install your plugins here:
 return packer.startup(function(use)
-  -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "vim-airline/vim-airline" -- Plugin to give a much blingier neo-vim status-line, with  themes available for GruvBox/CodeDark.
-  use "mhinz/vim-startify"      -- Neo-vim customizable Neo-vim start-page, w/ bookmarks/ascii cow programming humor each launch/re-load.
-  -- use "yggdroot/indentline"     -- A great fct. to visualize layers of column/vertical alignment groups of code.
-  use "rafi/awesome-vim-colorschemes"  -- Various vim-colour schemes.
-  use "ryanoasis/vim-devicons"     -- Developer icons for Neo-vim plugins like file-managers...
-  use "tpope/vim-surround"         -- great tag/code-encapsulator plugin.
+-- My Functionality plugins here:
+  use "wbthomason/packer.nvim"          -- Have packer manage itself.
+  use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"           -- Useful lua functions used in lots of plugins.
+  use "vim-airline/vim-airline"         -- Plugin to give a much blingier neo-vim status-line.
+  use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
+  use "yggdroot/indentline"             -- A great fct. to visualize layers of column alignment in code blocks.
+  use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
+  use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
 
-  -- Colorschemes
-  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+-- Colorschemes:
+  use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
+  use "lunarvim/colorschemes"           -- A bunch of colorschemes you can try out.
+  use "lunarvim/darkplus.nvim"          -- Another Random color-scheme.
+  use "sjl-badwolf"                     -- A color scheme for whenever I'm feeling nastalgic for my plain Vim.
 
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+-- cmp plugins
+  use "hrsh7th/nvim-cmp"                -- The completion plugin
+  use "hrsh7th/cmp-buffer"              -- buffer completions
+  use "hrsh7th/cmp-path"                -- path completions
+  use "hrsh7th/cmp-cmdline"             -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip"        -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"            -- Neo-vim completion integration.
+  use "hrsh7th/cmp-nvim-lua"            -- I'm assuming this will add lua completion to my cmp-engine.
 
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+-- snippets
+  use "L3MON4D3/LuaSnip"                -- Snippet engine plugin.
+  use "rafamadriz/friendly-snippets"    -- A bunch of snippets to use with cmp.
+
+-- LSP
+  use "neovim/nvim-lspconfig"           -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
