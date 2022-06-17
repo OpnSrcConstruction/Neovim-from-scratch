@@ -122,7 +122,6 @@ cmp.setup {
   },
 }
 
-
   -- Was giving me errors...
   -- TODO Find out what the documentation function does precisely,
   -- why it's happening and how to fix the problem;
