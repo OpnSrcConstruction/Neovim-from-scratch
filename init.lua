@@ -22,4 +22,6 @@ require "user.colorscheme"
 require "user.cmp"
 -- Where I will keep my Language-server-protocol configuration.
 require "user.lsp"
+-- Adding in the indent-line plugin...
+require "user.indentline"
 

@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
+  use "Yggdroot/indentLine"             -- Trying to finally get it right.
 
 -- Colorschemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
