@@ -157,8 +157,8 @@
   keymap("n", "<leader>sp", ":split<CR>", opts)     -- Splits current view horizontally.
   keymap("n", "<leader>vp", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 -- Better terminal navigation... ???
 -- This is the ONLY block I am not sure if I want to include in my config,

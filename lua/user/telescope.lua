@@ -92,7 +92,7 @@ telescope.setup {
     media_files = {
         -- filetypes whitelist
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-        filetypes = {"png", "webp", "jpg", "jpeg"},
+        filetypes = {"png", "jpg", "mp4", "webp", "jpeg", "pdf"},
         find_cmd = "rg" -- find command (defaults to `fd`)
       }
     -- Your extension configuration goes here:
