@@ -15,7 +15,8 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
-local kind_icons = {
+local kind_icons =
+{
   Text = "",
   Method = "m",
   Function = "",
@@ -44,20 +45,24 @@ local kind_icons = {
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
-cmp.setup {
-  snippet = {
+cmp.setup
+{
+  snippet =
+  {
     expand = function(args)
       luasnip.lsp_expand(args.body) -- For `luasnip` users.
     end,
   },
-  mapping = {
+  mapping =
+  {
     ["<C-k>"] = cmp.mapping.select_prev_item(),
     ["<C-j>"] = cmp.mapping.select_next_item(),
     ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
     ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
     ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
     ["<C-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-    ["<C-e>"] = cmp.mapping {
+    ["<C-e>"] = cmp.mapping
+    {
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     },
@@ -76,7 +81,8 @@ cmp.setup {
       else
         fallback()
       end
-    end, {
+    end,
+    {
       "i",
       "s",
     }),
@@ -88,12 +94,14 @@ cmp.setup {
       else
         fallback()
       end
-    end, {
+    end,
+    {
       "i",
       "s",
     }),
   },
-  formatting = {
+  formatting =
+  {
     fields = { "kind", "abbr", "menu" },
     format = function(entry, vim_item)
       -- Kind icons
@@ -107,16 +115,19 @@ cmp.setup {
       return vim_item
     end,
   },
-  sources = {
+  sources =
+  {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
   },
-  confirm_opts = {
+  confirm_opts =
+  {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
-  experimental = {
+  experimental =
+  {
     ghost_text = true,
     native_menu = false,
   },
