@@ -31,3 +31,4 @@ require "user.telescope"
 -- require "user.treesitter"
 -- I am hoping to get Auto-pair functioning going in my mostly lua neo-vim.
 require "user.autopairs"
+require "user.comment"

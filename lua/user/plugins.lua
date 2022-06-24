@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   -- use "Yggdroot/indentLine"             -- Trying to finally get it right.
+  use "numToStr/Comment.nvim" -- Easily comment stuff
 
 -- Colorschemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
@@ -83,6 +84,11 @@ return packer.startup(function(use)
 --     "nvim-treesitter/nvim-treesitter",
 --     run = ":TSUpdate",
 --   }
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use 'JoosepAlviste/nvim-ts-context-commentstring' 
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
