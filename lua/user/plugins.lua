@@ -50,8 +50,8 @@ return packer.startup(function(use)
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  -- use "Yggdroot/indentLine"             -- Trying to finally get it right.
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  -- use "Yggdroot/indentLine"             -- Trying to finally get it right.
 
 -- Colorschemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
