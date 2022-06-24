@@ -40,6 +40,7 @@ packer.init {
 
 -- Install your plugins here:
 return packer.startup(function(use)
+-- My plugins here:
 -- My Functionality plugins here:
   use "wbthomason/packer.nvim"          -- Have packer manage itself.
   use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
@@ -48,7 +49,8 @@ return packer.startup(function(use)
   use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
-  use "Yggdroot/indentLine"             -- Trying to finally get it right.
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  -- use "Yggdroot/indentLine"             -- Trying to finally get it right.
 
 -- Colorschemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
@@ -75,6 +77,12 @@ return packer.startup(function(use)
 -- Telescope:
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
+
+  -- Treesitter
+--   use {
+--     "nvim-treesitter/nvim-treesitter",
+--     run = ":TSUpdate",
+--   }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

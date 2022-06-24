@@ -25,5 +25,9 @@ require "user.lsp"
 -- Learning about telescope, targeted(fuzzy) searching plugin configuration:
 require "user.telescope"
 -- Adding in the indent-line plugin...
-require "user.indentline"
-
+-- require "user.indentline"
+-- Disabled Tree-sitter, until I can understand it  better, so I stashed It's branch of merged changes Fr. this branch and 
+-- inspired by my OG nvim(init.vim) Fr.--> OG vim(gotbletu/metalx1000/FrugalGuy/boomerGuy,Brodie,LinuxCast/DT/primeagen)
+-- require "user.treesitter"
+-- I am hoping to get Auto-pair functioning going in my mostly lua neo-vim.
+require "user.autopairs"
