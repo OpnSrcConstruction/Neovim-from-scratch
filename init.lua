@@ -37,3 +37,5 @@ require "user.comment"
 -- probably would have been better on my arch side, like neo-mutt, and tig/time-task_warriors
 -- Adding git-signs functionality.
 require "user.gitsigns"
+-- Getting a better more tab-aware slide-out file-manager.
+require "user.nvim-tree"

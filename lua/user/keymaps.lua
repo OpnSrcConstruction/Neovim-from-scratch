@@ -48,7 +48,7 @@
 
 -- Insert:
 -- Press jk fast to enter Normal-mode, from Insert-mode.
-  keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual:
 -- Stay in indent mode.
@@ -169,4 +169,6 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Indent-Lines-Toggle:
-  keymap("n", "<leader>ilt", ":IndentLinesToggle<CR>", opts)
+keymap("n", "<leader>ilt", ":IndentLinesToggle<CR>", opts)
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)

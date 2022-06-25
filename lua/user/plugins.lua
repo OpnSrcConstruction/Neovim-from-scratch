@@ -46,12 +46,14 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"           -- Useful lua functions used in lots of plugins.
   use "vim-airline/vim-airline"         -- Plugin to give a much blingier neo-vim status-line.
-  -- use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
+  use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   -- use "Yggdroot/indentLine"             -- Trying to finally get it right.
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
