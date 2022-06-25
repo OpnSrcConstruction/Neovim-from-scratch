@@ -46,14 +46,14 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"           -- Useful lua functions used in lots of plugins.
   use "vim-airline/vim-airline"         -- Plugin to give a much blingier neo-vim status-line.
-  use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
+  -- use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   -- use "Yggdroot/indentLine"             -- Trying to finally get it right.
 
--- Colorschemes:
+-- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
   use "lunarvim/colorschemes"           -- A bunch of colorschemes you can try out.
   use "lunarvim/darkplus.nvim"          -- Another Random color-scheme.
@@ -84,11 +84,14 @@ return packer.startup(function(use)
 --     "nvim-treesitter/nvim-treesitter",
 --     run = ":TSUpdate",
 --   }
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
-  use 'JoosepAlviste/nvim-ts-context-commentstring' 
+  -- use {
+  --   "nvim-treesitter/nvim-treesitter",
+  --   run = ":TSUpdate",
+  -- }
+  -- use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+  -- Git-gutter like functionality in a lua-neo-vim plugin.
+  use "lewis6991/gitsigns.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

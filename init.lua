@@ -33,3 +33,7 @@ require "user.telescope"
 require "user.autopairs"
 -- commenting works well!
 require "user.comment"
+-- Tried importing init.lua, but my vim was acting ugly.
+-- probably would have been better on my arch side, like neo-mutt, and tig/time-task_warriors
+-- Adding git-signs functionality.
+require "user.gitsigns"
