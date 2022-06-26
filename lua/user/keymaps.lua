@@ -31,7 +31,7 @@
   keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Toggle NetRW Plugin for now...
-  keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize with with Ctrl-Up/Down/Left/Right.
 -- Tweaked slightly like on the Video-series.
@@ -182,4 +182,3 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- ## Toggle Startify for ascii comic relief & bookmarks. ##
 -- #########################################################
 keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:
-

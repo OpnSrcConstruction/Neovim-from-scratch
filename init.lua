@@ -39,3 +39,5 @@ require "user.comment"
 require "user.gitsigns"
 -- Getting a better more tab-aware slide-out file-manager.
 require "user.nvim-tree"
+-- Adding sweet-tab support with the buffer-line plugin.
+require "user.bufferline"
