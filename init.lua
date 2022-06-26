@@ -43,3 +43,5 @@ require "user.nvim-tree"
 require "user.bufferline"
 -- Hopefully impressively fast Lua-status plugin... 
 require "user.lualine"
+-- Hopefully impressive utility to run TUIs/SHELLs.
+require "user.toggleterm"

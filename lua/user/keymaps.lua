@@ -167,6 +167,8 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 -- Better terminal navigation... ???
 -- This is the ONLY block I am not sure if I want to include in my config,
 -- b/c I don't understand what it does; so I'll disable it for now...
+-- Terminal --
+-- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)

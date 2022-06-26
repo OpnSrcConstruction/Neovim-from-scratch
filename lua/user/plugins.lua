@@ -45,7 +45,6 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"          -- Have packer manage itself.
   use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"           -- Useful lua functions used in lots of plugins.
-  -- use "vim-airline/vim-airline"         -- Plugin to give a much blingier neo-vim status-line. TESTING
   use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
@@ -54,12 +53,13 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'    -- Extra WWW-developer icons.
   use 'kyazdani42/nvim-tree.lua'        -- A sweet lua-based Nerd-tree File explorer.
   use "akinsho/bufferline.nvim"         -- A Neo-vim tab-enhancement plugin.
+  use "moll/vim-bbye"                   -- ??? TODO 
+  use "kyazdani42/nvim-web-devicons"    -- I would assume this is needed by Lua-line.
+  use 'nvim-lualine/lualine.nvim'       -- A lua replacement for Air-line.
   use "moll/vim-bbye"
-  use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
-  use 'nvim-lualine/lualine.nvim'
+  use "akinsho/toggleterm.nvim"         -- A Plugin to run shells/TUIs.
   -- use "Yggdroot/indentLine"          -- Trying to finally get it rightF.
+  -- use "vim-airline/vim-airline"         -- Plugin to give a much blingier neo-vim status-line. TESTING
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
@@ -100,8 +100,8 @@ return packer.startup(function(use)
   -- }
   -- use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-  -- Git-gutter like functionality in a lua-neo-vim plugin.
-  use "lewis6991/gitsigns.nvim"
+-- Git-gutter like functionality in a lua-neo-vim plugin.
+ use "lewis6991/gitsigns.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
