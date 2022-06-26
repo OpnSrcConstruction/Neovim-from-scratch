@@ -137,7 +137,7 @@
 -- ##################
   keymap("n", "<leader>dm", ":delmarks!<CR>", opts)     -- Delete ALL marks:
 
-  -- #################
+-- #################
 -- # TAB keymaps:  #
 -- #################
   keymap("n", "<leader>tn", ":tabnew ", opts)       -- New-tab
@@ -156,29 +156,31 @@
 -- #multi-plexing. :(                                                            #
 -- ###############################################################################
 
-keymap("n", "<leader>sp", ":split<CR>", opts)     -- Splits current view horizontally.
-keymap("n", "<leader>vp", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
+  keymap("n", "<leader>sp", ":split<CR>", opts)     -- Splits current view horizontally.
+  keymap("n", "<leader>vp", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
 
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+  keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+  keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Better terminal navigation... ???
 -- This is the ONLY block I am not sure if I want to include in my config,
 -- b/c I don't understand what it does; so I'll disable it for now...
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+-- Terminal --
+-- Better terminal navigation
+  keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+  keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+  keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+  keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Indent-Lines-Toggle:
-keymap("n", "<leader>ilt", ":IndentLinesToggle<CR>", opts)
+  keymap("n", "<leader>ilt", ":IndentLinesToggle<CR>", opts)
 
 -- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+  keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- #########################################################
 -- ## Toggle Startify for ascii comic relief & bookmarks. ##
 -- #########################################################
-keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:
+  keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:

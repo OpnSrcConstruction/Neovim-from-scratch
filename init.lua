@@ -43,4 +43,7 @@ require "user.nvim-tree"
 require "user.bufferline"
 -- require "user.lualine" I wasn't ready to replace vim-aitline YET...
 -- Added a pop-out Terminal, w/ HK's 4 cool TUI apps.
+-- Impressively fast Lua-status plugin... 
+require "user.lualine"
+-- Hopefully impressive utility to run TUIs/SHELLs.
 require "user.toggleterm"

@@ -45,19 +45,18 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"          -- Have packer manage itself.
   use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"           -- Useful lua functions used in lots of plugins.
-  use "vim-airline/vim-airline"         -- Plugin to give a much blingier neo-vim status-line.
   use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
   use "windwp/nvim-autopairs"           -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim"           -- Easily comment stuff
-  -- use "Yggdroot/indentLine"          -- Trying to finally get it rightF.
   use 'kyazdani42/nvim-web-devicons'    -- Extra WWW-developer icons.
   use 'kyazdani42/nvim-tree.lua'        -- A sweet lua-based Nerd-tree File explorer.
   use "akinsho/bufferline.nvim"         -- A Neo-vim tab-enhancement plugin.
-  use "moll/vim-bbye"
-  -- use 'nvim-lualine/lualine.nvim'    TODO
-  use "akinsho/toggleterm.nvim"
+  use "moll/vim-bbye"                   -- A more well bahaved "B"uffer-deletes. 
+  use 'nvim-lualine/lualine.nvim'       -- A lua replacement for Air-line.
+  use "akinsho/toggleterm.nvim"         -- A Plugin to run shells/TUIs.
+  -- use "Yggdroot/indentLine"          -- Trying to finally get it rightF.
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
@@ -82,12 +81,17 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
 --  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters TODO
+-- TODO use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
 -- Telescope:
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
 
-  -- Treesitter
+  -- Git:
+  -- Git-gutter like functionality in a lua-neo-vim plugin.
+  use "lewis6991/gitsigns.nvim"
+
+-- Treesitter
 --   use {
 --     "nvim-treesitter/nvim-treesitter",
 --     run = ":TSUpdate",
@@ -97,10 +101,6 @@ return packer.startup(function(use)
   --   run = ":TSUpdate",
   -- }
   -- use 'JoosepAlviste/nvim-ts-context-commentstring'
-
-  -- Git:
-  -- Git-gutter like functionality in a lua-neo-vim plugin.
-  use "lewis6991/gitsigns.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
