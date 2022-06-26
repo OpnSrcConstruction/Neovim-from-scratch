@@ -56,6 +56,8 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'        -- A sweet lua-based Nerd-tree File explorer.
   use "akinsho/bufferline.nvim"         -- A Neo-vim tab-enhancement plugin.
   use "moll/vim-bbye"
+  -- use 'nvim-lualine/lualine.nvim'    TODO
+  use "akinsho/toggleterm.nvim"
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
@@ -78,6 +80,8 @@ return packer.startup(function(use)
 -- LSP:
   use "neovim/nvim-lspconfig"           -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+--  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters TODO
 
 -- Telescope:
   use "nvim-telescope/telescope.nvim"
@@ -94,6 +98,7 @@ return packer.startup(function(use)
   -- }
   -- use 'JoosepAlviste/nvim-ts-context-commentstring'
 
+  -- Git:
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
 

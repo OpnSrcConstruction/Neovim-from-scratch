@@ -41,3 +41,6 @@ require "user.gitsigns"
 require "user.nvim-tree"
 -- Adding sweet-tab support with the buffer-line plugin.
 require "user.bufferline"
+-- require "user.lualine" I wasn't ready to replace vim-aitline YET...
+-- Added a pop-out Terminal, w/ HK's 4 cool TUI apps.
+require "user.toggleterm"
