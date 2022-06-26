@@ -146,15 +146,15 @@
   keymap("n", "<leader>tc", ":tabclose<CR>", opts)  -- Close-tab
   keymap("n", "<leader>db", ":bd<CR>", opts)        -- Delete-Buffer
 
--- ###############################################################################
--- # Split-keymaps:                                                              #
--- #The following combos split the view, and it is up to you to switch to        #
--- #different files or locations in a large file perhaps.                        #
--- #*~In a powershell or cmd prompt, there is possibly no session or             #
--- #tmux|screen|byobu or jobs like functionality I've been able to find.         #
--- #Although clink 4 cmd does have history/jab-control, but sadly no shell-view  #
--- #multi-plexing. :(                                                            #
--- ###############################################################################
+-- ################################################################################
+-- # Split-keymaps:                                                               #
+-- # The following combos split the view, and it is up to you to switch to        #
+-- # different files or locations in a large file perhaps.                        #
+-- # *~In a powershell or cmd prompt, there is possibly no session or             #
+-- # tmux|screen|byobu or jobs like functionality I've been able to find.         #
+-- # Although clink 4 cmd does have history/jab-control, but sadly no shell-view  #
+-- # multi-plexing. :(                                                            #
+-- ################################################################################
 
   keymap("n", "<leader>sp", ":split<CR>", opts)     -- Splits current view horizontally.
   keymap("n", "<leader>vp", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
