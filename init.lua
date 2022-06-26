@@ -41,3 +41,5 @@ require "user.gitsigns"
 require "user.nvim-tree"
 -- Adding sweet-tab support with the buffer-line plugin.
 require "user.bufferline"
+-- Hopefully impressively fast Lua-status plugin... 
+require "user.lualine"

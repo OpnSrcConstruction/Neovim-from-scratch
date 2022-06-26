@@ -137,7 +137,7 @@
 -- ##################
   keymap("n", "<leader>dm", ":delmarks!<CR>", opts)     -- Delete ALL marks:
 
-  -- #################
+-- #################
 -- # TAB keymaps:  #
 -- #################
   keymap("n", "<leader>tn", ":tabnew ", opts)       -- New-tab
