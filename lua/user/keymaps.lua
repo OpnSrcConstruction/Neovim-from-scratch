@@ -177,3 +177,9 @@ keymap("n", "<leader>ilt", ":IndentLinesToggle<CR>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- #########################################################
+-- ## Toggle Startify for ascii comic relief & bookmarks. ##
+-- #########################################################
+keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:
+
