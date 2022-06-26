@@ -140,11 +140,11 @@
 -- #################
 -- # TAB keymaps:  #
 -- #################
-  keymap("n", "<leader>tn", ":tabnew ", opts)       -- New-tab
-  keymap("n", "<leader>bt", "gT", opts)             -- Backward-tab(s)
-  keymap("n", "<leader>ft", "gt", opts)             -- Forward-tab(s)
-  keymap("n", "<leader>tc", ":tabclose<CR>", opts)  -- Close-tab
-  keymap("n", "<leader>db", ":bd<CR>", opts)        -- Delete-Buffer
+  keymap("n", "<leader>tn", ":tabnew ", opts)          -- New-tab
+  keymap("n", "<leader>tc", ":Bdelete<CR>", opts)      -- Close-tab
+  -- keymap("n", "<leader>bt", "gT", opts)             -- Backward-tab(s)
+  -- keymap("n", "<leader>ft", "gt", opts)             -- Forward-tab(s)
+  -- redundant keymap("n", "<leader>db", ":bd<CR>", opts)        -- Delete-Buffer
 
 -- ################################################################################
 -- # Split-keymaps:                                                               #
