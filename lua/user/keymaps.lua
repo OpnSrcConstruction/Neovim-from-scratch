@@ -188,3 +188,5 @@
 -- Toggle-term TUI-app maps:
   keymap("n", "<leader>lgt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
 
+  keymap("n", "<leader>ncdu", ":lua _NCDU_TOGGLE()<CR>", opts)
+
