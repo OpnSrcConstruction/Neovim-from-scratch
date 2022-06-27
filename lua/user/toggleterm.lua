@@ -66,5 +66,5 @@ end
 local python = Terminal:new({ cmd = "python", hidden = true })
 
 function _PYTHON_TOGGLE()
-  python:toggle()
+  python3:toggle()
 end

@@ -184,3 +184,7 @@
 -- ## Toggle Startify for ascii comic relief & bookmarks. ##
 -- #########################################################
   keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:
+
+-- Toggle-term TUI-app maps:
+  keymap("n", "<leader>lgt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
+
