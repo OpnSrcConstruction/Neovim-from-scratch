@@ -40,6 +40,8 @@ toggleterm.setup({
 
 local Terminal = require("toggleterm.terminal").Terminal
 
+
+
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 
 function _LAZYGIT_TOGGLE()
@@ -52,27 +54,44 @@ function _NODE_TOGGLE()
   node:toggle()
 end
 
+-- I wish gdu would have worked, weird since it works in float_Tterm, when called incrementally.
 local ncdu = Terminal:new({ cmd = "ncdu", hidden = true })
 
 function _NCDU_TOGGLE()
   ncdu:toggle()
 end
 
+-- Because who doesn't love H-top???...
 local htop = Terminal:new({ cmd = "htop", hidden = true })
 
 function _HTOP_TOGGLE()
   htop:toggle()
 end
 
+-- Basic Python 3.10+ shell.
 local python = Terminal:new({ cmd = "python3", hidden = true })
 
 function _PYTHON_TOGGLE()
   python:toggle()
 end
 
--- Finally added my own TT_TUI magic.
+-- Finally adding my own TT_TUI magic.
+local ipython = Terminal:new({ cmd = "ipython3", hidden = true })
+
+function _IPYTHON_TOGGLE()
+  ipython:toggle()
+end
+
+-- Finally adding my own TT_TUI magic.
 local nmon = Terminal:new({ cmd = "nmon", hidden = true })
 
 function _NMON_TOGGLE()
   nmon:toggle()
+end
+
+-- Finally adding my own TT_TUI magic.
+local nethogs = Terminal:new({ cmd = "nethogs", hidden = true })
+
+function _NETHOGS_TOGGLE()
+  nethogs:toggle()
 end

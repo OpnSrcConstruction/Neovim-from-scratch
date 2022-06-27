@@ -204,3 +204,6 @@
   -- n == NT
   -- q == quit
   -- ? == help-menu
+
+  keymap("n", "<leader>ipy3", ":lua _IPYTHON_TOGGLE()<CR>", opts)      -- Great sytem-monitoring tool.
+  
