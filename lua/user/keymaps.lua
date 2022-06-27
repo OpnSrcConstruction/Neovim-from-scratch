@@ -190,3 +190,6 @@
 
   keymap("n", "<leader>ncdu", ":lua _NCDU_TOGGLE()<CR>", opts)
 
+  keymap("n", "<leader>htop", ":lua _HTOP_TOGGLE()<CR>", opts)
+
+
