@@ -57,6 +57,7 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'       -- A lua replacement for Air-line.
   use "akinsho/toggleterm.nvim"         -- A Plugin to run shells/TUIs.
   use "mbbill/undotree"                 -- A plugin to visualize Git's default built-in auto-undo-tree.
+  use "preservim/tagbar"                -- Getting my tag-bar back.
   -- use "Yggdroot/indentLine"          -- Trying to finally get it rightF.
 
 -- Colors-schemes:
