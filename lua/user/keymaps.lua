@@ -192,4 +192,6 @@
 
   keymap("n", "<leader>htop", ":lua _HTOP_TOGGLE()<CR>", opts)
 
+  keymap("n", "<leader>node", ":lua _NODE_TOGGLE()<CR>", opts)
+
 

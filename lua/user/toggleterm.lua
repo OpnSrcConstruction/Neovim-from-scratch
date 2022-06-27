@@ -38,8 +38,9 @@ toggleterm.setup({
 
   vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
-  local Terminal = require("toggleterm.terminal").Terminal
-  local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+local Terminal = require("toggleterm.terminal").Terminal
+
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 
 function _LAZYGIT_TOGGLE()
   lazygit:toggle()
@@ -63,8 +64,8 @@ function _HTOP_TOGGLE()
   htop:toggle()
 end
 
-local python = Terminal:new({ cmd = "python", hidden = true })
+local python = Terminal:new({ cmd = "python3", hidden = true })
 
 function _PYTHON_TOGGLE()
-  python3:toggle()
+  python:toggle()
 end
