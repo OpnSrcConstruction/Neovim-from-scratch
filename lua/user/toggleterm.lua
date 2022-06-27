@@ -69,3 +69,10 @@ local python = Terminal:new({ cmd = "python3", hidden = true })
 function _PYTHON_TOGGLE()
   python:toggle()
 end
+
+-- Finally added my own TT_TUI magic.
+local nmon = Terminal:new({ cmd = "nmon", hidden = true })
+
+function _NMON_TOGGLE()
+  nmon:toggle()
+end

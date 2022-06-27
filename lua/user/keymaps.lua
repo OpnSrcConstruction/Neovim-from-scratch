@@ -186,12 +186,21 @@
   keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:
 
 -- Toggle-term TUI-app maps:
-  keymap("n", "<leader>lgt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
+  keymap("n", "<leader>lgt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)    -- Maps L->lgt to lazygit.
 
-  keymap("n", "<leader>ncdu", ":lua _NCDU_TOGGLE()<CR>", opts)
+  keymap("n", "<leader>ncdu", ":lua _NCDU_TOGGLE()<CR>", opts)      -- Maps L->ncdu to ncdu fs analyzer.
 
-  keymap("n", "<leader>htop", ":lua _HTOP_TOGGLE()<CR>", opts)
+  keymap("n", "<leader>htop", ":lua _HTOP_TOGGLE()<CR>", opts)      -- maps L->htop to my htop system monitor.
 
-  keymap("n", "<leader>node", ":lua _NODE_TOGGLE()<CR>", opts)
+  keymap("n", "<leader>node", ":lua _NODE_TOGGLE()<CR>", opts)      -- Maps L->node to the NodeJS pkg. mgr.
 
+  keymap("n", "<leader>py3", ":lua _PYTHON_TOGGLE()<CR>", opts)     -- Maps L->py3 to the Basic IDLE python-3 shell.
 
+  keymap("n", "<leader>nmon", ":lua _NMON_TOGGLE()<CR>", opts)      -- Great sytem-monitoring tool.
+  -- Some basic keys after your in nmon:
+  -- c == CPU monitor
+  -- d == Disk I/O
+  -- m == Memory
+  -- n == NT
+  -- q == quit
+  -- ? == help-menu
