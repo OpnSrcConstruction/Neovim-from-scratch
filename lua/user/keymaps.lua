@@ -91,8 +91,8 @@
 -- ###################################################################
 -- ## Map nr to toggle off the relative line numbers in Normal mode. #
 -- ###################################################################
-  keymap("n", "<leader>nno", ":set nornu<CR>", opts) -- Turn relative line-numbers OFF.
-  keymap("n", "<leader>rn", ":set rnu<CR>", opts)  -- Turn relative line-numbers back on.
+  keymap("n", "<leader>rlno", ":set nornu<CR>", opts) -- Turn relative line-numbers OFF.
+  keymap("n", "<leader>rln", ":set rnu<CR>", opts)  -- Turn relative line-numbers back on.
 
 -- ###########################################################################
 -- ##I'm mapping comma{,} + lower-case 'l' to disable special char listings. #
@@ -108,8 +108,8 @@
 -- ##############################################################
 -- ## Spell check set to sc(Spell-Check)/es(Switch 2 ESpañol.). #
 -- ##############################################################
-  keymap("n", "<leader>sc", ":setlocal spell! spelllang=en_us<CR>", opts)
-  keymap("n", "<leader>es", ":set spelllang=es<CR>", opts)
+  keymap("n", "<leader>sck", ":setlocal spell! spelllang=en_us<CR>", opts)
+  keymap("n", "<leader>esp", ":set spelllang=es<CR>", opts)
 
 -- #########################################################################
 -- ## hotkey mappings for jumps, marks, buffer-LiSting, and changes lists. #
@@ -129,13 +129,13 @@
 -- #########################################################################
   keymap("n", "<leader>qq", ":q<CR>", opts)
   keymap("n", "<leader>wq", ":wq<CR>", opts)
-  keymap("n", "<leader>qa", ":qa!<CR>", opts)
-  keymap("n", "<leader>s", ":w<CR>", opts)
+  keymap("n", "<leader>qall", ":qa!<CR>", opts)
+  keymap("n", "<leader>save", ":w<CR>", opts)
 
 -- ##################
 -- ## Mark-keymaps: #
 -- ##################
-  keymap("n", "<leader>dm", ":delmarks!<CR>", opts)     -- Delete ALL marks:
+  keymap("n", "<leader>dmrks", ":delmarks!<CR>", opts)     -- Delete ALL marks:
 
 -- #################
 -- # TAB keymaps:  #
@@ -156,13 +156,13 @@
 -- # multi-plexing. :(                                                            #
 -- ################################################################################
 
-  keymap("n", "<leader>sp", ":split<CR>", opts)     -- Splits current view horizontally.
-  keymap("n", "<leader>vp", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
+  keymap("n", "<leader>spt", ":split<CR>", opts)     -- Splits current view horizontally.
+  keymap("n", "<leader>vspt", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
 
-  keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+  keymap("n", "<leader>file", "<cmd>Telescope find_files<cr>", opts)
 
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-  keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+  keymap("n", "<leader>grep", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Better terminal navigation... ???
 -- This is the ONLY block I am not sure if I want to include in my config,
@@ -186,7 +186,7 @@
   keymap("n", "<leader>st", ":Startify<CR>", opts)     -- Delete ALL marks:
 
 -- Toggle-term TUI-app maps:
-  keymap("n", "<leader>lgt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)    -- Maps L->lgt to lazygit.
+  keymap("n", "<leader>lgIt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)    -- Maps L->lgt to lazygit.
 
   keymap("n", "<leader>ncdu", ":lua _NCDU_TOGGLE()<CR>", opts)      -- Maps L->ncdu to ncdu fs analyzer.
 
@@ -210,3 +210,5 @@
   keymap("n", "<leader>tree", ":UndotreeToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
 
   keymap("n", "<leader>tbar", ":TagbarToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
+
+  keymap("n", "<leader>vifm", ":lua _VIFM_TOGGLE()<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.

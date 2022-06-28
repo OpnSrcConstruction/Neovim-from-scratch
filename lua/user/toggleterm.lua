@@ -89,9 +89,16 @@ function _NMON_TOGGLE()
   nmon:toggle()
 end
 
--- Finally adding my own TT_TUI magic.
+-- Finally adding my own TT_TUI magic. Needs sudo exception to p/w require.
 local nethogs = Terminal:new({ cmd = "nethogs", hidden = true })
 
 function _NETHOGS_TOGGLE()
   nethogs:toggle()
+end
+
+-- Finally adding my own TT_TUI magic.
+local vifm = Terminal:new({ cmd = "vifm", hidden = true })
+
+function _VIFM_TOGGLE()
+  vifm:toggle()
 end
