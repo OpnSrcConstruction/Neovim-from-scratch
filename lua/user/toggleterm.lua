@@ -102,3 +102,4 @@ local vifm = Terminal:new({ cmd = "vifm", hidden = true })
 function _VIFM_TOGGLE()
   vifm:toggle()
 end
+
