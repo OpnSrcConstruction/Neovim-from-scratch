@@ -58,6 +58,8 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"         -- A Plugin to run shells/TUIs.
   use "mbbill/undotree"                 -- A plugin to visualize Git's default built-in auto-undo-tree.
   use "preservim/tagbar"                -- Getting my tag-bar back.
+  use "alvan/vim-closetag"              -- Tag-completion plugin.
+  use "mattn/emmet-vim"                 -- Added the emmet Quick-tag plugin.
   -- use "Yggdroot/indentLine"          -- Trying to finally get it rightF.
 
 -- Colors-schemes:
