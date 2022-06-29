@@ -42,50 +42,50 @@ packer.init {
 return packer.startup(function(use)
 -- My plugins here:
 -- My Functionality plugins here:
-  use "wbthomason/packer.nvim"          -- Have packer manage itself.
-  use "nvim-lua/popup.nvim"             -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"           -- Useful lua functions used in lots of plugins.
-  use "mhinz/vim-startify"              -- Neo-vim customizable Neo-vim start-page.
-  use "ryanoasis/vim-devicons"          -- Developer icons for Neo-vim plugins like file-managers...
-  use "tpope/vim-surround"              -- A great tag/code-encapsulator plugin.
-  use "windwp/nvim-autopairs"           -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim"           -- Easily comment stuff
-  use 'kyazdani42/nvim-web-devicons'    -- Extra WWW-developer icons.
-  use 'kyazdani42/nvim-tree.lua'        -- A sweet lua-based Nerd-tree File explorer.
-  use "akinsho/bufferline.nvim"         -- A Neo-vim tab-enhancement plugin.
-  use "moll/vim-bbye"                   -- A more well bahaved "B"uffer-deletes. 
-  use 'nvim-lualine/lualine.nvim'       -- A lua replacement for Air-line.
-  use "akinsho/toggleterm.nvim"         -- A Plugin to run shells/TUIs.
-  use "mbbill/undotree"                 -- A plugin to visualize Git's default built-in auto-undo-tree.
-  use "preservim/tagbar"                -- Getting my tag-bar back.
-  use "Yggdroot/indentLine"             -- Trying to finally get it rightF.
-  use "tpope/vim-repeat"                -- Now you can repeat plugin actions.
-  -- use "alvan/vim-closetag"              -- Tag-completion plugin.
-  -- use "mattn/emmet-vim"                 -- Added the emmet Quick-tag plugin.
+  use "wbthomason/packer.nvim"                -- Have packer manage itself.
+  use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"                 -- Useful lua functions used in lots of plugins.
+  use "mhinz/vim-startify"                    -- Neo-vim customizable Neo-vim start-page.
+  use "ryanoasis/vim-devicons"                -- Developer icons for Neo-vim plugins like file-managers...
+  use "tpope/vim-surround"                    -- A great tag/code-encapsulator plugin.
+  use "windwp/nvim-autopairs"                 -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim"                 -- Easily comment stuff
+  use 'kyazdani42/nvim-web-devicons'          -- Extra WWW-developer icons.
+  use 'kyazdani42/nvim-tree.lua'              -- A sweet lua-based Nerd-tree File explorer.
+  use "akinsho/bufferline.nvim"               -- A Neo-vim tab-enhancement plugin.
+  use "moll/vim-bbye"                         -- A more well bahaved "B"uffer-deletes. 
+  use 'nvim-lualine/lualine.nvim'             -- A lua replacement for Air-line.
+  use "akinsho/toggleterm.nvim"               -- A Plugin to run shells/TUIs.
+  use "mbbill/undotree"                       -- A plugin to visualize Git's default built-in auto-undo-tree.
+  use "preservim/tagbar"                      -- Getting my tag-bar back.
+  use "tpope/vim-repeat"                      -- Now you can repeat plugin actionsave
+  use "lukas-reineke/indent-blankline.nvim"   -- Hopefully better lua IL-plugin.
+  -- use "alvan/vim-closetag"                 -- Tag-completion plugin.
+  -- use "mattn/emmet-vim"                    -- Added the emmet Quick-tag plugin.
 
 -- Colors-schemes:
-  use "rafi/awesome-vim-colorschemes"   -- Various vim-colour schemes.
-  use "lunarvim/colorschemes"           -- A bunch of colorschemes you can try out.
-  use "lunarvim/darkplus.nvim"          -- Another Random color-scheme.
+  use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
+  use "lunarvim/colorschemes"                 -- A bunch of colorschemes you can try out.
+  use "lunarvim/darkplus.nvim"                -- Another Random color-scheme.
 
 -- cmp plugins:
-  use "hrsh7th/nvim-cmp"                -- The completion plugin
-  use "hrsh7th/cmp-buffer"              -- buffer completions
-  use "hrsh7th/cmp-path"                -- path completions
-  use "hrsh7th/cmp-cmdline"             -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip"        -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"            -- Neo-vim completion integration.
-  use "hrsh7th/cmp-nvim-lua"            -- I'm assuming this will add lua completion to my cmp-engine.
+  use "hrsh7th/nvim-cmp"                      -- The completion plugin
+  use "hrsh7th/cmp-buffer"                    -- buffer completions
+  use "hrsh7th/cmp-path"                      -- path completions
+  use "hrsh7th/cmp-cmdline"                   -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip"              -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"                  -- Neo-vim completion integration.
+  use "hrsh7th/cmp-nvim-lua"                  -- I'm assuming this will add lua completion to my cmp-engine.
 
 -- snippets:
-  use "L3MON4D3/LuaSnip"                -- Snippet engine plugin.
-  use "rafamadriz/friendly-snippets"    -- A bunch of snippets to use with cmp.
+  use "L3MON4D3/LuaSnip"                      -- Snippet engine plugin.
+  use "rafamadriz/friendly-snippets"          -- A bunch of snippets to use with cmp.
 
 -- LSP:
-  use "neovim/nvim-lspconfig"           -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
---  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters TODO
+  use "neovim/nvim-lspconfig"                 -- enable LSP
+  use "williamboman/nvim-lsp-installer"       -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim"          -- language server settings defined in json for
+--  use "jose-elias-alvarez/null-ls.nvim"     -- for formatters and linters TODO
 -- TODO use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
 -- Telescope:

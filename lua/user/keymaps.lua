@@ -175,7 +175,7 @@
   keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Indent-Lines-Toggle:
-  keymap("n", "<leader>ilt", ":IndentLinesToggle<CR>", opts)
+  keymap("n", "<leader>ilt", ":IndentBlanklineToggle<CR>", opts)
 
 -- Nvimtree
   keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
