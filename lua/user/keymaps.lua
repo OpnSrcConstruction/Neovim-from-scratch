@@ -183,7 +183,7 @@
 -- #########################################################
 -- ## Toggle Startify for ascii comic relief & bookmarks. ##
 -- #########################################################
-  keymap("n", "<leader>aa", ":<CR>", opts)     -- Delete ALL marks:
+  keymap("n", "<leader>alfa", ":Alpha<CR>", opts)     -- Delete ALL marks:
 
 -- Toggle-term TUI-app maps:
   keymap("n", "<leader>lgIt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)    -- Maps L->lgt to lazygit.
