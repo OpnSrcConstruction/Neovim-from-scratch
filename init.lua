@@ -52,3 +52,5 @@ require "user.toggleterm"
 require "user.indentline"
 -- Hopefully get alpha dash-board working...
 require "user.alpha"
+-- Adding in colorizer.nvim pllugin to bg colorize color-codes.
+require "user.colorizer"
