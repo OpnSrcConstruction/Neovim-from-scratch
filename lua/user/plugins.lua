@@ -42,10 +42,19 @@ packer.init {
 return packer.startup(function(use)
 -- My plugins here:
 -- My Functionality plugins here:
+-- First Function is for configuring Alpha start page.
+--   use {
+--     'goolord/alpha-nvim',
+--     requires = { 'kyazdani42/nvim-web-devicons' },
+--     config = function ()
+--         require'alpha'.setup(require'alpha.themes.startify'.config)
+--     end
+-- } 
+  use "goodlord/alpha-nvim"                   -- Now I just have to get manual & fortuynes locations working.  
   use "wbthomason/packer.nvim"                -- Have packer manage itself.
   use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"                 -- Useful lua functions used in lots of plugins.
-  use "mhinz/vim-startify"                    -- Neo-vim customizable Neo-vim start-page.
+  -- use "mhinz/vim-startify"                    -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"                -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"                    -- A great tag/code-encapsulator plugin.
   use "windwp/nvim-autopairs"                 -- Autopairs, integrates with both cmp and treesitter

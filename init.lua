@@ -47,3 +47,8 @@ require "user.bufferline"
 require "user.lualine"
 -- Hopefully impressive utility to run TUIs/SHELLs.
 require "user.toggleterm"
+-- Hopefully get Indent-line working properly,
+-- by linking in it's configuration.
+require "user.indentline"
+-- Hopefully get alpha dash-board working...
+require "user.alpha"

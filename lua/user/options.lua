@@ -48,8 +48,8 @@ local options = {
   end
 
 -- Enabling editor pips/EOL/trails/ext/pre...
-  vim.o.list = true  -- Set special formatting characters to on.
-  vim.o.listchars = 'eol:↲,trail:~,precedes:<,extends:>,space:·'
+  -- vim.o.list = true  -- Set special formatting characters to on.
+  -- vim.o.listchars = 'eol:↲,trail:~,precedes:<,extends:>,space:·'
 
 -- Did NOT fit well within the options loop , without throwing errors and disabling the loop.
   vim.opt.shortmess:append "I"                    -- Set No Intro-message for Neo-vim.
