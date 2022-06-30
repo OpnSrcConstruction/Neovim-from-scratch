@@ -207,7 +207,7 @@
 
   keymap("n", "<leader>ipy3", ":lua _IPYTHON_TOGGLE()<CR>", opts)      -- Great sytem-monitoring tool.
 
-  keymap("n", "<leader>tree", ":UndotreeToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
+  keymap("n", "<leader>tre", ":UndotreeToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
 
   keymap("n", "<leader>tbar", ":TagbarToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
 

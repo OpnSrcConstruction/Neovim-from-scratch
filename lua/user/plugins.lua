@@ -51,7 +51,7 @@ return packer.startup(function(use)
 --     end
 -- } 
   use "norcalli/nvim-colorizer.lua"           -- A great & fast lua color-code bg colorizer plugin.
-  use "goodlord/alpha-nvim"                   -- Now I just have to get manual & fortuynes locations working.  
+  use "goolord/alpha-nvim"                   -- Now I just have to get manual & fortuynes locations working.  
   use "wbthomason/packer.nvim"                -- Have packer manage itself.
   use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"                 -- Useful lua functions used in lots of plugins.
