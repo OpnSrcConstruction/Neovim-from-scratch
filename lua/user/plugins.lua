@@ -51,25 +51,24 @@ return packer.startup(function(use)
 --     end
 -- } 
   use "norcalli/nvim-colorizer.lua"           -- A great & fast lua color-code bg colorizer plugin.
-  use "goolord/alpha-nvim"                   -- Now I just have to get manual & fortuynes locations working.  
   use "wbthomason/packer.nvim"                -- Have packer manage itself.
   use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"                 -- Useful lua functions used in lots of plugins.
-  -- use "mhinz/vim-startify"                    -- Neo-vim customizable Neo-vim start-page.
   use "ryanoasis/vim-devicons"                -- Developer icons for Neo-vim plugins like file-managers...
   use "tpope/vim-surround"                    -- A great tag/code-encapsulator plugin.
-  use "windwp/nvim-autopairs"                 -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim"                 -- Easily comment stuff
+  use "windwp/nvim-autopairs"                 -- Autopairs, integrates with both cmp and treesitter.
+  use "numToStr/Comment.nvim"                 -- Easily comment stuff with gcc.
   use 'kyazdani42/nvim-web-devicons'          -- Extra WWW-developer icons.
   use 'kyazdani42/nvim-tree.lua'              -- A sweet lua-based Nerd-tree File explorer.
   use "akinsho/bufferline.nvim"               -- A Neo-vim tab-enhancement plugin.
   use "moll/vim-bbye"                         -- A more well bahaved "B"uffer-deletes. 
   use 'nvim-lualine/lualine.nvim'             -- A lua replacement for Air-line.
   use "akinsho/toggleterm.nvim"               -- A Plugin to run shells/TUIs.
-  use "mbbill/undotree"                       -- A plugin to visualize Git's default built-in auto-undo-tree.
+  use "mbbill/undotree"                       -- A plugin to view Git's default built-in auto-undo-tree.
   use "preservim/tagbar"                      -- Getting my tag-bar back.
   use "tpope/vim-repeat"                      -- Now you can repeat plugin actionsave
   use "lukas-reineke/indent-blankline.nvim"   -- Hopefully better lua IL-plugin.
+  use "goolord/alpha-nvim"                    -- Telescope enabled dash-board sttyle plugin.
   -- use "alvan/vim-closetag"                 -- Tag-completion plugin.
   -- use "mattn/emmet-vim"                    -- Added the emmet Quick-tag plugin.
 
