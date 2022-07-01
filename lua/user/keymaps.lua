@@ -141,7 +141,7 @@
 -- # TAB keymaps:  #
 -- #################
   keymap("n", "<leader>tn", ":tabnew ", opts)          -- New-tab
-  keymap("n", "<leader>tc", ":Bdelete<CR>", opts)      -- Close-tab
+  keymap("n", "<leader>x", ":Bdelete<CR>", opts)      -- Close-tab
   -- keymap("n", "<leader>bt", "gT", opts)             -- Backward-tab(s)
   -- keymap("n", "<leader>ft", "gt", opts)             -- Forward-tab(s)
   -- redundant keymap("n", "<leader>db", ":bd<CR>", opts)        -- Delete-Buffer
