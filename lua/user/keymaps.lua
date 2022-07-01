@@ -215,5 +215,12 @@
 
 -- Git-Signs(lua-gutter):
 -- Hunk-navigation:
-  keymap("n", "<leader>gsnh", ":GitSigns next_hunk", opts)
-  keymap("n", "<leader>gsph", ":GitSigns prev_hunk", opts)
+  keymap("n", "<leader>gsnh", ":Gitsigns next_hunk<CR>", opts)
+  keymap("n", "<leader>gsph", ":Gitsigns prev_hunk<CR>", opts)
+  -- Select hunk in Visual-mode.
+  keymap("n", "<leader>gssh", ":Gitsigns select_hunk<CR>", opts)
+  -- Preview hunk-diff preview.
+  keymap("n", "<leader>gspvh", ":Gitsigns preview_hunk<CR>", opts)
+  -- Toggle recently deleted hunks:
+  -- Great as a what did I just do toggle through git and NOT Undo/Redo.
+  keymap("n", "<leader>gstd", ":Gitsigns toggle_deleted<CR>", opts)
