@@ -236,7 +236,5 @@
   keymap("n", "<leader>gstgh", ":Gitsigns stage_hunk<CR>", opts)
   -- Reset a staged hunk.
   keymap("n", "<leader>gsush", ":Gitsigns undo_stage_hunk<CR", opts)
-  -- Toggle word diff mode:
+  -- Toggle word diff highlighting-mode:
   keymap("n", "<leader>gstwd", ":Gitsigns toggle_word_diff<CR>", opts)
-  -- Do Git vimdiff on the given file, against the file-base.
-  keymap("n", "<leader>gsdt", ":Gitsigns diffthis<CR>", opts)
