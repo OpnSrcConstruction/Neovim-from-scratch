@@ -228,4 +228,6 @@
   keymap("n", "<leader>gsbl", ":Gitsigns blame_line<CR>", opts)
   -- Stage All hunks in current buffer.
   keymap("n", "<leader>gssb", ":Gitsigns stage_buffer<CR>", opts)
+  -- Stage a specific text-hunk.
+  keymap("n", "<leader>gstgh", ":Gitsigns stage_hunk<CR>", opts)
 
