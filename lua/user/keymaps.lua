@@ -212,3 +212,8 @@
   keymap("n", "<leader>tbar", ":TagbarToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
 
   keymap("n", "<leader>vifm", ":lua _VIFM_TOGGLE()<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
+
+-- Git-Signs(lua-gutter):
+-- Hunk-navigation:
+  keymap("n", "<leader>gsnh", ":GitSigns next_hunk", opts)
+  keymap("n", "<leader>gsph", ":GitSigns prev_hunk", opts)
