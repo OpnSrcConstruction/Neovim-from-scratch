@@ -57,5 +57,8 @@ local options = {
 -- vim.cmd Passes strings, that will be interpreted as vim-script.
   vim.cmd "set whichwrap+=<,>,[,],h,l" -- This wraps lines with w/ h-l/<-|-> arrows in command/insert-mode.
   vim.cmd [[set iskeyword+=-]] -- Will treat words with a dash as part of a single word.
-
-  -- vim.g.user_emmet_leader_key = ""
+  
+-- Close-tag variable-settings:
+  vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
+-- Close tags are set to insensitive, just-in-case.
+vim.g.closetag_emptyTags_caseSensitive = 0

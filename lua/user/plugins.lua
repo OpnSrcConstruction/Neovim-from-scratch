@@ -69,8 +69,7 @@ return packer.startup(function(use)
   use "tpope/vim-repeat"                      -- Now you can repeat plugin actionsave
   use "lukas-reineke/indent-blankline.nvim"   -- Hopefully better lua IL-plugin.
   use "goolord/alpha-nvim"                    -- Telescope enabled dash-board sttyle plugin.
-  -- use "alvan/vim-closetag"                 -- Tag-completion plugin.
-  -- use "mattn/emmet-vim"                    -- Added the emmet Quick-tag plugin.
+  use "alvan/vim-closetag"                 -- Tag-completion plugin.
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
