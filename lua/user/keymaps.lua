@@ -224,3 +224,8 @@
   -- Toggle recently deleted hunks:
   -- Great as a what did I just do toggle through git and NOT Undo/Redo.
   keymap("n", "<leader>gstd", ":Gitsigns toggle_deleted<CR>", opts)
+  -- Runs blame_line
+  keymap("n", "<leader>gsbl", ":Gitsigns blame_line<CR>", opts)
+  -- Stage All hunks in current buffer.
+  keymap("n", "<leader>gssb", ":Gitsigns stage_buffer<CR>", opts)
+
