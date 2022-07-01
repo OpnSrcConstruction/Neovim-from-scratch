@@ -229,5 +229,11 @@
   -- Stage All hunks in current buffer.
   keymap("n", "<leader>gssb", ":Gitsigns stage_buffer<CR>", opts)
   -- Stage a specific text-hunk.
+  -- Unstage ALL hunks for current buffer/tab in the index.
+  -- This runs a full file reset.
+  keymap("n", "<leader>gsrbi", ":Gitsigns reset_buffer_index<CR>", opts)
+  -- Stage a single hunk under cursor.
   keymap("n", "<leader>gstgh", ":Gitsigns stage_hunk<CR>", opts)
+  -- Reset a staged hunk.
+  keymap("n", "<leader>gsush", ":Gitsigns undo_stage_hunk<CR", opts)
 
