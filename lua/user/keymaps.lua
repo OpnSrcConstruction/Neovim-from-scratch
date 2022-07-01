@@ -212,6 +212,3 @@
   keymap("n", "<leader>tbar", ":TagbarToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
 
   keymap("n", "<leader>vifm", ":lua _VIFM_TOGGLE()<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
-
--- Close-tag-Toggle buffer:
-  keymap("n", "<leader>cttb", "CloseTagToggleBuffer")

@@ -59,6 +59,6 @@ local options = {
   vim.cmd [[set iskeyword+=-]] -- Will treat words with a dash as part of a single word.
   
 -- Close-tag variable-settings:
-  vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
+-- vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
 -- Close tags are set to insensitive, just-in-case.
 vim.g.closetag_emptyTags_caseSensitive = 0
