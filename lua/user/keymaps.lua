@@ -159,10 +159,6 @@
   keymap("n", "<leader>spt", ":split<CR>", opts)     -- Splits current view horizontally.
   keymap("n", "<leader>vspt", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
 
-  keymap("n", "<leader>file", "<cmd>Telescope find_files<cr>", opts)
-
--- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-  keymap("n", "<leader>grep", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Better terminal navigation... ???
 -- This is the ONLY block I am not sure if I want to include in my config,
@@ -252,3 +248,9 @@
 
   -- Populate the quickfix list with change-hunks.
   keymap("n", "<leader>gslls", ":Gitsigns setloclist<CR>", opts)
+
+-- Telescope fuzzy-searching HKs:
+  keymap("n", "<leader>tsfd", "<cmd>Telescope find_files<cr>", opts) -- Search for files, but respecting .gitignore.
+  keymap("n", "<leader>tslg", "<cmd>Telescope live_grep<cr>", opts) -- For rip-grepping(rg) through open project buffers.
+  keymap("n", "<leader>tskm", "<cmd>Telescope keymaps<CR>", opts) -- For searching Key-maps.
+  keymap("n", "<leader>tscmds", "<cmd>Telescope commands<CR>", opts) -- Search for available ex-mode commands.
