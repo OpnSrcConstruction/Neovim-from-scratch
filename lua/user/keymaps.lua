@@ -263,4 +263,5 @@
   keymap("n", "<leader>tsgf", "<cmd>Telescope git_files<CR", opts)  -- Searches through Git tracked files in this project.
   keymap("n", "<leader>tscmt", "<cmd>Telescope git_commits<CR>", opts)  -- Searches through Git commits in this directory.
   keymap("n", "<leader>tsbcmt", "<cmd>Telescope git_bcommits<CR>", opts)  -- Searches through Git commits in this current buffer.
-
+  keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<CR>", opts)  -- Lists stash items in current repository.
+  keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts)  -- Lists branches in current repository.
