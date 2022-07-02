@@ -250,6 +250,7 @@
   keymap("n", "<leader>gslls", ":Gitsigns setloclist<CR>", opts)
 
 -- Telescope fuzzy-searching HKs:
+  keymap("n", "<leader>tscp", "<cmd>Telescope<CR>", opts)  -- For searching through available telescope commands...
   keymap("n", "<leader>tsfd", "<cmd>Telescope find_files<cr>", opts) -- Search for files, but respecting .gitignore.
   keymap("n", "<leader>tslg", "<cmd>Telescope live_grep<cr>", opts) -- For rip-grepping(rg) through open project buffers.
   keymap("n", "<leader>tskm", "<cmd>Telescope keymaps<CR>", opts) -- For searching Key-maps.
@@ -257,3 +258,9 @@
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
   keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
   keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)  --Search through loaded auto-commands I think.
+  keymap("n", "<leader>tsmp", "<cmd>Telescope man_pages<CR>", opts)  --Search through available man pages.
+  -- Git...
+  keymap("n", "<leader>tsgf", "<cmd>Telescope git_files<CR", opts)  -- Searches through Git tracked files in this project.
+  keymap("n", "<leader>tscmt", "<cmd>Telescope git_commits<CR>", opts)  -- Searches through Git commits in this directory.
+  keymap("n", "<leader>tsbcmt", "<cmd>Telescope git_bcommits<CR>", opts)  -- Searches through Git commits in this current buffer.
+
