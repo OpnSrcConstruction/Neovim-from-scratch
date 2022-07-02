@@ -257,7 +257,6 @@
   keymap("n", "<leader>tscmds", "<cmd>Telescope commands<CR>", opts) -- Search for available ex-mode commands.
   keymap("n", "<leader>tscmdh", "<cmd>Telescope command_history<CR>", opts) -- Search for available ex-mode commands.
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
-  keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
   keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)  --Search through loaded auto-commands I think.
   keymap("n", "<leader>tsmp", "<cmd>Telescope man_pages<CR>", opts)  --Search through available man pages.
   -- Git...
@@ -267,3 +266,8 @@
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<CR>", opts)  -- Lists stash items in current repository.
   keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts)  -- Lists branches in current repository.
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts)  -- Lists branches in current repository.
+  -- Fuzzy-menus:
+  keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
+  keymap("n", "<leader>tsreg", "<cmd>Telescope registers<CR>", opts)  -- Search through open buffer registers in the tree.
+  keymap("n", "<leader>tsmrk", "<cmd>Telescope marks<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
+  keymap("n", "<leader>tsjl", "<cmd>Telescope jump_list<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
