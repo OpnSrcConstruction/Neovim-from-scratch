@@ -265,3 +265,4 @@
   keymap("n", "<leader>tsbcmt", "<cmd>Telescope git_bcommits<CR>", opts)  -- Searches through Git commits in this current buffer.
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<CR>", opts)  -- Lists stash items in current repository.
   keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts)  -- Lists branches in current repository.
+  keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts)  -- Lists branches in current repository.
