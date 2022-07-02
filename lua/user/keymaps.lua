@@ -256,3 +256,4 @@
   keymap("n", "<leader>tscmds", "<cmd>Telescope commands<CR>", opts) -- Search for available ex-mode commands.
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
   keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
+  keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)  --Search through loaded auto-commands I think.
