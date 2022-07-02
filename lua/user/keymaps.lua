@@ -61,7 +61,7 @@
   keymap("v", "<A-k>", ":m .-2<CR>==", opts)
   keymap("v", "p", '"_dP', opts)
 -- Subltle change, but if you paste over a visual selection;
--- Now it won't put what you pasted over into the 2-be-pasted-next buffer. 
+-- Now it won't put what you pasted over into the 2-be-pasted-next buffer.
 
 -- Visual Block --
 -- Move full lines Up/Down.
@@ -157,7 +157,7 @@
 -- ################################################################################
 
   keymap("n", "<leader>spt", ":split<CR>", opts)     -- Splits current view horizontally.
-  keymap("n", "<leader>vspt", ":vsplit<CR>", opts)    -- Splits current view Vertically. 
+  keymap("n", "<leader>vspt", ":vsplit<CR>", opts)    -- Splits current view Vertically.
 
 
 -- Better terminal navigation... ???
@@ -242,7 +242,7 @@
 
   -- Toggle word diff highlighting-mode:
   keymap("n", "<leader>gstwd", ":Gitsigns toggle_word_diff<CR>", opts)
- 
+
   -- Populate the quickfix list with change-hunks.
   keymap("n", "<leader>gsqfl", ":Gitsigns setqflist<CR>", opts)
 
@@ -254,3 +254,5 @@
   keymap("n", "<leader>tslg", "<cmd>Telescope live_grep<cr>", opts) -- For rip-grepping(rg) through open project buffers.
   keymap("n", "<leader>tskm", "<cmd>Telescope keymaps<CR>", opts) -- For searching Key-maps.
   keymap("n", "<leader>tscmds", "<cmd>Telescope commands<CR>", opts) -- Search for available ex-mode commands.
+  keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
+  keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
