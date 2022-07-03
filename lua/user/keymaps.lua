@@ -260,7 +260,13 @@
   keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)  -- Search through loaded auto-commands I think.
   keymap("n", "<leader>tsmp", "<cmd>Telescope man_pages<CR>", opts)  -- Search through available man pages.
   keymap("n", "<leader>tspm", "<cmd>Telescope projects<CR>", opts)  -- Search through ongoing projects, by f-system location.
-  -- Git...
+  -- f in Normal-mode or <C-f> in insert mode to search through/launch project files of selected project.
+  -- b in Normal-mode or <C-b> in insert mode to browse project files.
+  -- d in Normal-mode or <C-d> in insert mode to DELETE_PROJECT.
+  -- s in Normal-mode or <C-s> in insert mode to search in project files.
+  -- r in Normal-mode or <C-r> in insert mode to search for MRU(Most_Recently_Used) files.
+  -- w in Normal-mode or <C-w> in insert mode to Change the CWD(Current_Working_Directory) of the selected project.
+    -- Git...
   keymap("n", "<leader>tsgf", "<cmd>Telescope git_files<CR", opts)  -- Searches through Git tracked files in this project.
   keymap("n", "<leader>tscmt", "<cmd>Telescope git_commits<CR>", opts)  -- Searches through Git commits in this directory.
   keymap("n", "<leader>tsbcmt", "<cmd>Telescope git_bcommits<CR>", opts)  -- Searches through Git commits in this current buffer.
