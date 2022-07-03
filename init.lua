@@ -26,7 +26,7 @@ require "user.lsp"
 require "user.telescope"
 -- Adding in the indent-line plugin...
 -- require "user.indentline"
--- Disabled Tree-sitter, until I can understand it  better, so I stashed It's branch of merged changes Fr. this branch and 
+-- Disabled Tree-sitter, until I can understand it  better, so I stashed It's branch of merged changes.
 -- inspired by my OG nvim(init.vim) Fr.--> OG vim(gotbletu/metalx1000/FrugalGuy/boomerGuy,Brodie,LinuxCast/DT/primeagen)
 -- require "user.treesitter"
 -- I got Auto-pair functioning going in my mostly lua neo-vim.
