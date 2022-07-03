@@ -71,6 +71,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"                    -- Telescope enabled dash-board sttyle plugin.
   use "alvan/vim-closetag"                    -- Tag-completion plugin.
   use "ahmedkhalf/project.nvim"               -- I think I need to RTFM...
+  use "ggandor/lightspeed.nvim"               -- An interesting sneak/QS alternative.
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
