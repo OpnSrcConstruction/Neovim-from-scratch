@@ -49,7 +49,7 @@ return packer.startup(function(use)
 --     config = function ()
 --         require'alpha'.setup(require'alpha.themes.startify'.config)
 --     end
--- } 
+-- }
   use "norcalli/nvim-colorizer.lua"           -- A great & fast lua color-code bg colorizer plugin.
   use "wbthomason/packer.nvim"                -- Have packer manage itself.
   use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
@@ -61,7 +61,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'          -- Extra WWW-developer icons.
   use 'kyazdani42/nvim-tree.lua'              -- A sweet lua-based Nerd-tree File explorer.
   use "akinsho/bufferline.nvim"               -- A Neo-vim tab-enhancement plugin.
-  use "moll/vim-bbye"                         -- A more well bahaved "B"uffer-deletes. 
+  use "moll/vim-bbye"                         -- A more well bahaved "B"uffer-deletes.
   use 'nvim-lualine/lualine.nvim'             -- A lua replacement for Air-line.
   use "akinsho/toggleterm.nvim"               -- A Plugin to run shells/TUIs.
   use "mbbill/undotree"                       -- A plugin to view Git's default built-in auto-undo-tree.
