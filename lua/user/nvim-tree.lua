@@ -78,7 +78,7 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 30,
+    width = 42,
     height = 30,
     hide_root_folder = false,
     side = "left",
@@ -91,8 +91,10 @@ nvim_tree.setup {
         { key = "v", cb = tree_cb "vsplit" },
       },
     },
-    number = false,
-    relativenumber = false,
+    -- number = false,
+    -- relativenumber = false,
+    number = true,
+    relativenumber = true,
   },
   trash = {
     cmd = "trash",
@@ -107,6 +109,6 @@ nvim_tree.setup {
     folders = 1,
     files = 1,
     folder_arrows = 1,
-    tree_width = 30,
+    tree_width = 42,
   },
 }

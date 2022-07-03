@@ -38,56 +38,82 @@ packer.init {
   },
 }
 
--- Install your plugins here
+-- Install your plugins here:
 return packer.startup(function(use)
-  -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim" -- Easily comment stuff
-  use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
-  use 'nvim-lualine/lualine.nvim'
-  use "akinsho/toggleterm.nvim"
-  use "ahmedkhalf/project.nvim"
+-- My plugins here:
+-- My Functionality plugins here:
+-- First Function is for configuring Alpha start page.
+--   use {
+--     'goolord/alpha-nvim',
+--     requires = { 'kyazdani42/nvim-web-devicons' },
+--     config = function ()
+--         require'alpha'.setup(require'alpha.themes.startify'.config)
+--     end
+-- } 
+  use "norcalli/nvim-colorizer.lua"           -- A great & fast lua color-code bg colorizer plugin.
+  use "wbthomason/packer.nvim"                -- Have packer manage itself.
+  use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"                 -- Useful lua functions used in lots of plugins.
+  use "ryanoasis/vim-devicons"                -- Developer icons for Neo-vim plugins like file-managers...
+  use "tpope/vim-surround"                    -- A great tag/code-encapsulator plugin.
+  use "windwp/nvim-autopairs"                 -- Autopairs, integrates with both cmp and treesitter.
+  use "numToStr/Comment.nvim"                 -- Easily comment stuff with gcc.
+  use 'kyazdani42/nvim-web-devicons'          -- Extra WWW-developer icons.
+  use 'kyazdani42/nvim-tree.lua'              -- A sweet lua-based Nerd-tree File explorer.
+  use "akinsho/bufferline.nvim"               -- A Neo-vim tab-enhancement plugin.
+  use "moll/vim-bbye"                         -- A more well bahaved "B"uffer-deletes. 
+  use 'nvim-lualine/lualine.nvim'             -- A lua replacement for Air-line.
+  use "akinsho/toggleterm.nvim"               -- A Plugin to run shells/TUIs.
+  use "mbbill/undotree"                       -- A plugin to view Git's default built-in auto-undo-tree.
+  use "preservim/tagbar"                      -- Getting my tag-bar back.
+  use "tpope/vim-repeat"                      -- Now you can repeat plugin actionsave
+  use "lukas-reineke/indent-blankline.nvim"   -- Hopefully better lua IL-plugin.
+  use "goolord/alpha-nvim"                    -- Telescope enabled dash-board sttyle plugin.
+  use "alvan/vim-closetag"                    -- Tag-completion plugin.
+  use "ahmedkhalf/project.nvim"               -- I think I need to RTFM...
 
-  -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+-- Colors-schemes:
+  use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
+  use "lunarvim/colorschemes"                 -- A bunch of colorschemes you can try out.
+  use "lunarvim/darkplus.nvim"                -- Another Random color-scheme.
 
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
+-- cmp plugins:
+  use "hrsh7th/nvim-cmp"                      -- The completion plugin
+  use "hrsh7th/cmp-buffer"                    -- buffer completions
+  use "hrsh7th/cmp-path"                      -- path completions
+  use "hrsh7th/cmp-cmdline"                   -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip"              -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"                  -- Neo-vim completion integration.
+  use "hrsh7th/cmp-nvim-lua"                  -- I'm assuming this will add lua completion to my cmp-engine.
 
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+-- snippets:
+  use "L3MON4D3/LuaSnip"                      -- Snippet engine plugin.
+  use "rafamadriz/friendly-snippets"          -- A bunch of snippets to use with cmp.
 
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+-- LSP:
+  use "neovim/nvim-lspconfig"                 -- enable LSP
+  use "williamboman/nvim-lsp-installer"       -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim"          -- language server settings defined in json for
+--  use "jose-elias-alvarez/null-ls.nvim"     -- for formatters and linters TODO
 
-  -- Telescope
+-- Telescope:
   use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
 
-  -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
-  use "JoosepAlviste/nvim-ts-context-commentstring"
-
-  -- Git
+  -- Git:
+  -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
+
+-- Treesitter
+--   use {
+--     "nvim-treesitter/nvim-treesitter",
+--     run = ":TSUpdate",
+--   }
+  -- use {
+  --   "nvim-treesitter/nvim-treesitter",
+  --   run = ":TSUpdate",
+  -- }
+  -- use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

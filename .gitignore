@@ -39,5 +39,7 @@ luac.out
 *.x86_64
 *.hex
 
+# for ignoring the vim backup-files.
+*~
 
 plugin/packer_compiled.lua
