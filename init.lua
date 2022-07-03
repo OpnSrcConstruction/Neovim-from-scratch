@@ -56,3 +56,7 @@ require "user.indentline"
 require "user.alpha"
 -- Adding in colorizer nvim plugin to bg colorize color-codes.
 require "user.colorizer"
+-- Adding a more/less auto. speed-up lua-plugins.
+require "user.impatient"
+-- Hopefully this will be easy enough to tweak eventually.
+require "user.whichkey"

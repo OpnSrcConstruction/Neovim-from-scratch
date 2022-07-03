@@ -47,10 +47,6 @@ local options = {
     vim.opt[k] = v
   end
 
--- Enabling editor pips/EOL/trails/ext/pre...
-  -- vim.o.list = true  -- Set special formatting characters to on.
-  -- vim.o.listchars = 'eol:↲,trail:~,precedes:<,extends:>,space:·'
-
 -- Did NOT fit well within the options loop , without throwing errors and disabling the loop.
   vim.opt.shortmess:append "I"                    -- Set No Intro-message for Neo-vim.
 
@@ -58,7 +54,7 @@ local options = {
   vim.cmd "set whichwrap+=<,>,[,],h,l" -- This wraps lines with w/ h-l/<-|-> arrows in command/insert-mode.
   vim.cmd [[set iskeyword+=-]] -- Will treat words with a dash as part of a single word.
   
--- Close-tag variable-settings:
--- vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
--- Close tags are set to insensitive, just-in-case.
-vim.g.closetag_emptyTags_caseSensitive = 0
+--Close-tag variable-settings:
+--vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
+--Close tags are set to insensitive, just-in-case.
+  vim.g.closetag_emptyTags_caseSensitive = 0

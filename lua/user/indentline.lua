@@ -3,8 +3,6 @@ if not status_ok then
   return
 end
 
--- vim.g.indentLine_char_list = { "|", "¦", "┆", "┊", }
-
 vim.g.indent_blankline_buftype_exclude = { "terminal", "nofile" }
 vim.g.indent_blankline_filetype_exclude = {
   "alpha",
@@ -15,9 +13,9 @@ vim.g.indent_blankline_filetype_exclude = {
   "Trouble",
 }
 vim.g.indentLine_enabled = 1
-vim.g.indent_blankline_char = "│"
+-- vim.g.indent_blankline_char = "│"
 vim.g.indent_blankline_char = "▏"
-vim.g.indent_blankline_char = "▎"
+-- vim.g.indent_blankline_char = "▎"
 vim.g.indent_blankline_show_trailing_blankline_indent = true
 vim.g.indent_blankline_show_first_indent_level = true
 vim.g.indent_blankline_use_treesitter = true
@@ -55,21 +53,20 @@ vim.cmd [[highlight IndentBlanklineIndent5 guifg=#E06C75 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent3 guifg=#E5C07B gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
 vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
+-- vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "space:"
 vim.opt.listchars:append "eol:↲"
--- vim.opt.listchars:append "trail:~↲"
 vim.opt.listchars:append "precedes:<"
 vim.opt.listchars:append "extends:>"
 
-  indent_blankline.setup({
-    show_end_of_line = true,
-    space_char_blankline = " ",
+indent_blankline.setup({
+  show_end_of_line = true,
+  space_char_blankline = " ",
   show_current_context = true,
   show_current_context_start = true,
   char_highlight_list = {
-    "IndentBlanklineIndent1",
-    "IndentBlanklineIndent2",
-    "IndentBlanklineIndent3",
+  "IndentBlanklineIndent1",
+  "IndentBlanklineIndent2",
+  "IndentBlanklineIndent3",
   },
 })

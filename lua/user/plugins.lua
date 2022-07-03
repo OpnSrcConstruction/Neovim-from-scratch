@@ -41,15 +41,6 @@ packer.init {
 -- Install your plugins here:
 return packer.startup(function(use)
 -- My plugins here:
--- My Functionality plugins here:
--- First Function is for configuring Alpha start page.
---   use {
---     'goolord/alpha-nvim',
---     requires = { 'kyazdani42/nvim-web-devicons' },
---     config = function ()
---         require'alpha'.setup(require'alpha.themes.startify'.config)
---     end
--- }
   use "norcalli/nvim-colorizer.lua"           -- A great & fast lua color-code bg colorizer plugin.
   use "wbthomason/packer.nvim"                -- Have packer manage itself.
   use "nvim-lua/popup.nvim"                   -- An implementation of the Popup API from vim in Neovim
@@ -72,6 +63,9 @@ return packer.startup(function(use)
   use "alvan/vim-closetag"                    -- Tag-completion plugin.
   use "ahmedkhalf/project.nvim"               -- I think I need to RTFM...
   use "ggandor/lightspeed.nvim"               -- An interesting sneak/QS alternative.
+  use "lewis6991/impatient.nvim"	      -- Hopefully this will speed up all of my lua nvim plugins.
+  use "antoinemadec/FixCursorHold.nvim"       -- This is needed to fix lsp doc highlight
+  use "folke/which-key.nvim"                  -- I hope I don't have to totally rewrite my Leader bindings.
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
@@ -105,17 +99,11 @@ return packer.startup(function(use)
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
 
--- Treesitter
---   use {
---     "nvim-treesitter/nvim-treesitter",
---     run = ":TSUpdate",
---   }
-  -- use {
-  --   "nvim-treesitter/nvim-treesitter",
-  --   run = ":TSUpdate",
-  -- }
-  -- use 'JoosepAlviste/nvim-ts-context-commentstring'
-
+  -- Treesitter
+  --   use {
+  --     "nvim-treesitter/nvim-treesitter",
+  --     run = ":TSUpdate",
+  --   }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
