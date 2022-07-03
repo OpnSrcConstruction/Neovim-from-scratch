@@ -259,7 +259,7 @@
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
   keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)  -- Search through loaded auto-commands I think.
   keymap("n", "<leader>tsmp", "<cmd>Telescope man_pages<CR>", opts)  -- Search through available man pages.
-  keymap("n", "<leader>tspm", "<cmd>Telescope projects", opts)  -- Search through ongoing projects, by f-system location.
+  keymap("n", "<leader>tspm", "<cmd>Telescope projects<CR>", opts)  -- Search through ongoing projects, by f-system location.
   -- Git...
   keymap("n", "<leader>tsgf", "<cmd>Telescope git_files<CR", opts)  -- Searches through Git tracked files in this project.
   keymap("n", "<leader>tscmt", "<cmd>Telescope git_commits<CR>", opts)  -- Searches through Git commits in this directory.
