@@ -100,14 +100,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope-github.nvim"   -- Adds 4 github-cli telescope functions.
   --  :lua ('telescope').extensions.gitmoji.gitmoji()
   -- TS cheatsheet plugin.
-  use {
-  "sudormrfbin/cheatsheet.nvim",
-  requires = {
-    {'nvim-telescope/telescope.nvim'},
-    {'nvim-lua/popup.nvim'},
-    {'nvim-lua/plenary.nvim'},
-  }
-}
+  use "sudormrfbin/cheatsheet.nvim"
   -- Git:
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
