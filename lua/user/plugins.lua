@@ -63,9 +63,10 @@ return packer.startup(function(use)
   use "alvan/vim-closetag"                    -- Tag-completion plugin.
   use "ahmedkhalf/project.nvim"               -- I think I need to RTFM...
   use "ggandor/lightspeed.nvim"               -- An interesting sneak/QS alternative.
-  use "lewis6991/impatient.nvim"	      -- Hopefully this will speed up all of my lua nvim plugins.
+  use "lewis6991/impatient.nvim"              -- Hopefully this will speed up all of my lua nvim plugins.
   use "antoinemadec/FixCursorHold.nvim"       -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"                  -- I hope I don't have to totally rewrite my Leader bindings.
+  use "vimwiki/vimwiki"                       -- Vimwiki is a personal wiki for Vim...
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
@@ -94,7 +95,14 @@ return packer.startup(function(use)
 -- Telescope:
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
-
+  use {
+  'sudormrfbin/cheatsheet.nvim',
+  requires = {
+    {'nvim-telescope/telescope.nvim'},
+    {'nvim-lua/popup.nvim'},
+    {'nvim-lua/plenary.nvim'},
+  }
+}
   -- Git:
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"

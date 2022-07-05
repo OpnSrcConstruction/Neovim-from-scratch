@@ -60,3 +60,5 @@ require "user.colorizer"
 require "user.impatient"
 -- Hopefully this will be easy enough to tweak eventually.
 require "user.whichkey"
+-- Added Cheat TS-plugin.
+require "user.cheatsheet"

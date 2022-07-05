@@ -278,3 +278,4 @@
   keymap("n", "<leader>tsreg", "<cmd>Telescope registers<CR>", opts)  -- Search through open buffer registers in the tree.
   keymap("n", "<leader>tsmrk", "<cmd>Telescope marks<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tsjl", "<cmd>Telescope jumplist<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
+  keymap("n", "<leader>tscht", "<cmd>Cheatsheet<CR>", opts)            -- Cheat-sheet Telescope plugin.
