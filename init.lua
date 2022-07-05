@@ -64,3 +64,5 @@ require "user.whichkey"
 require "user.cheatsheet"
 -- Added a file to initiate my emoji telescope settings.
 require "user.tsemoji"
+-- Required for gh.
+require('telescope').load_extension('gh')
