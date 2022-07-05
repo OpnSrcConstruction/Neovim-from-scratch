@@ -43,7 +43,7 @@ require "user.nvim-tree"
 require "user.bufferline"
 -- require "user.lualine" I wasn't ready to replace vim-aitline YET...
 -- Added a pop-out Terminal, w/ HK's 4 cool TUI apps.
--- Impressively fast Lua-status plugin... 
+-- Impressively fast Lua-status plugin...
 require "user.lualine"
 -- Lua based Project mgmt.
 require "user.project"
@@ -62,3 +62,5 @@ require "user.impatient"
 require "user.whichkey"
 -- Added Cheat TS-plugin.
 require "user.cheatsheet"
+-- Added a file to initiate my emoji telescope settings.
+require "user.tsemoji"

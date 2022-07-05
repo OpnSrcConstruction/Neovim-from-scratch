@@ -279,3 +279,4 @@
   keymap("n", "<leader>tsmrk", "<cmd>Telescope marks<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tsjl", "<cmd>Telescope jumplist<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tscht", "<cmd>Cheatsheet<CR>", opts)            -- Cheat-sheet Telescope plugin.
+  keymap("n", "<leader>temoji", "<cmd>Telescope emoji<CR>", opts)       -- A neat emoji-Picker. :D
