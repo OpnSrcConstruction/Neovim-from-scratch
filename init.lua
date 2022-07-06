@@ -66,3 +66,5 @@ require "user.cheatsheet"
 require "user.tsemoji"
 -- Required for gh.
 require('telescope').load_extension('gh')
+-- Required for TS-changes.
+require('telescope').load_extension('changes')

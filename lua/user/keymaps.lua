@@ -273,11 +273,19 @@
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<CR>", opts)  -- Lists stash items in current repository.
   keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts)  -- Lists branches in current repository.
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts)  -- Lists branches in current repository.
+  keymap("n", "<leader>tgmoji", "<cmd>lua require('telescope').extensions.gitmoji.gitmoji()<CR>", opts)       -- Adds an E-moji to the commit message You choose.
+  -- Git-hub-cli...
+  keymap("n", "<leader>ghgst", "<cmd>Telescope gh gist", opts)          -- https://cli.github.com/manual/gh_gist Manage Gists.
+  keymap("n", "<leader>ghpr", "<cmd>Telescope gh pull_request", opts)       -- Manage Pull-requests...
+  keymap("n", "<leader>ghprf", "<cmd>Telescope gh pull_request_files", opts)    --Search through the PR-file-set.
+  keymap("n", "<leader>ghs", "<cmd>Telescope gh secret", opts)              -- Manage GH secrets.
+  keymap("n", "<leader>ghi", "<cmd>Telescope gh issues", opts)          -- Manage GH issues.
+  keymap("n", "<leader>ghwfr", "<cmd>Telescope gh run", opts)           -- View details about currently running Workflow-runs.
   -- Fuzzy-menus:
   keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
   keymap("n", "<leader>tsreg", "<cmd>Telescope registers<CR>", opts)  -- Search through open buffer registers in the tree.
   keymap("n", "<leader>tsmrk", "<cmd>Telescope marks<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tsjl", "<cmd>Telescope jumplist<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
+  keymap("n", "<leader>tchg", "<cmd>Telescope changes<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tscht", "<cmd>Cheatsheet<CR>", opts)            -- Cheat-sheet Telescope plugin.
-  keymap("n", "<leader>temoji", "<cmd>Telescope emoji<CR>", opts)       -- A neat emoji-Picker. :D
-  keymap("n", "<leader>tgmoji", "<cmd>lua require('telescope').extensions.gitmoji.gitmoji()<CR>", opts)       -- A neat emoji-Picker. :D
+  keymap("n", "<leader>temoji", "<cmd>Telescope emoji<CR>", opts)       -- A great emoji-Picker. 😌
