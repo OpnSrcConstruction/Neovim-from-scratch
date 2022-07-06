@@ -114,11 +114,11 @@
 -- #########################################################################
 -- ## hotkey mappings for jumps, marks, buffer-LiSting, and changes lists. #
 -- #########################################################################
-  keymap("n", "<leader>mm", ":marks<CR>", opts)     -- This will open up the Marks-list.
-  keymap("n", "<leader>jj", ":jumps<CR>", opts)     -- This will open up the Jumps-list.
-  keymap("n", "<leader>ll", ":ls<CR>", opts)        -- This opens up the buffers-list.
-  keymap("n", "<leader>cc", ":changes<CR>", opts)   -- This will open up the Changes-list.
-  keymap("n", "<leader>rr", ":registers<Cr>", opts) -- This will open up the Registers-list.
+  -- keymap("n", "<leader>mm", ":marks<CR>", opts)     -- This will open up the Marks-list.
+  -- keymap("n", "<leader>jj", ":jumps<CR>", opts)     -- This will open up the Jumps-list.
+  -- keymap("n", "<leader>ll", ":ls<CR>", opts)        -- This opens up the buffers-list.
+  -- keymap("n", "<leader>cc", ":changes<CR>", opts)   -- This will open up the Changes-list.
+  -- keymap("n", "<leader>rr", ":registers<Cr>", opts) -- This will open up the Registers-list.
 
 -- #########################################################################
 -- ## Adding some hotkeys to more easily deal with splits.                 #
