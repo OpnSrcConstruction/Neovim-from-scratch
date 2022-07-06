@@ -259,7 +259,8 @@
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
   keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)  -- Search through loaded auto-commands I think.
   keymap("n", "<leader>tsmp", "<cmd>Telescope man_pages<CR>", opts)  -- Search through available man pages.
-  keymap("n", "<leader>tspm", "<cmd>Telescope projects<CR>", opts)  -- Search through ongoing projects, by f-system location.
+  keymap("n", "<leader>tspj", "<cmd>Telescope projects<CR>", opts)  -- Search through ongoing projects, by f-system location.
+  keymap("n", "<leader>tvim", "<cmd>Telescope vim_options<CR>", opts)  -- Search through ongoing projects, by f-system location.
   -- f in Normal-mode or <C-f> in insert mode to search through/launch project files of selected project.
   -- b in Normal-mode or <C-b> in insert mode to browse project files.
   -- d in Normal-mode or <C-d> in insert mode to DELETE_PROJECT.
