@@ -250,7 +250,7 @@
   keymap("n", "<leader>gslls", ":Gitsigns setloclist<CR>", opts)
 
 -- Telescope fuzzy-searching HKs:
-  keymap("n", "<leader>tscp", "<cmd>Telescope<CR>", opts)  -- For searching through available telescope commands...
+  keymap("n", "<leader>tscp", "<cmd>Telescope<CR>", opts)  -- For searching through available telescope commands.
   keymap("n", "<leader>tsfd", "<cmd>Telescope find_files<cr>", opts) -- Search for files, but respecting .gitignore.
   keymap("n", "<leader>tslg", "<cmd>Telescope live_grep<cr>", opts) -- For rip-grepping(rg) through open project buffers.
   keymap("n", "<leader>tskm", "<cmd>Telescope keymaps<CR>", opts) -- For searching Key-maps.
@@ -262,7 +262,8 @@
   keymap("n", "<leader>tspj", "<cmd>Telescope projects<CR>", opts)  -- Search through ongoing projects, by f-system location.
   keymap("n", "<leader>tvim", "<cmd>Telescope vim_options<CR>", opts)  -- Search through available vim options.
   keymap("n", "<leader>tsof", "<cmd>Telescope oldfiles<CR>", opts)  -- Search through Files of a project oldest to newest.📁
-  -- f in Normal-mode or <C-f> in insert mode to search through/launch project files of selected project. 
+  keymap("n", "<leader>tsft", "<cmd>Telescope filetypes<CR>", opts)  -- Search through File-types.📁
+  -- f in Normal-mode or <C-f> in insert mode to search through/launch project files of selected project.
   -- b in Normal-mode or <C-b> in insert mode to browse project files.
   -- d in Normal-mode or <C-d> in insert mode to DELETE_PROJECT.
   -- s in Normal-mode or <C-s> in insert mode to search in project files.
