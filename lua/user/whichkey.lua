@@ -176,14 +176,18 @@ local mappings = {
     name = "Terminal",
     j = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node.Js" },
     n = { "<cmd>lua _NCDU_TOGGLE()<cr>", "Ncdu" },
-    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "hTop" },
+    h = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
     p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
     i = { "<cmd>lua _IPYTHON_TOGGLE()<cr>", "I-Python" },
     m = { "<cmd>lua _NMON_TOGGLE()<cr>", "nMon" },
-    g = { "<cmd>lua _NETHOGS_TOGGLE()<cr>", "net-hoGs" },
-    f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-    h = { "<cmd>ToggleTerm size=15 direction=horizontal<cr>", "Horizontal" },
-    v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+    g = { "<cmd>lua _NETHOGS_TOGGLE()<cr>", "net-hoGs" },  -- Needs a sudo exception! TODO
+    v = { "<cmd>lua _VIFM_TOGGLE()<cr>", "Vifm" },
+    e = {
+    name = "Empty-shell",
+      f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+      h = { "<cmd>ToggleTerm size=15 direction=horizontal<cr>", "Horizontal" },
+      v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+    },
   },
 }
 
