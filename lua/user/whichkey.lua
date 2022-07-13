@@ -182,7 +182,7 @@ local mappings = {
     m = { "<cmd>lua _NMON_TOGGLE()<cr>", "nMon" },
     g = { "<cmd>lua _NETHOGS_TOGGLE()<cr>", "net-hoGs" },
     f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-    h = { "<cmd>ToggleTerm size=30 direction=horizontal<cr>", "Horizontal" },
+    h = { "<cmd>ToggleTerm size=15 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 }
