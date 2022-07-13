@@ -48,6 +48,12 @@ function _LAZYGIT_TOGGLE()
   lazygit:toggle()
 end
 
+local gitpush = Terminal:new({ cmd = "git push", hidden = true })
+-- Added so I can now launch a terminal and insta-push my changes.
+function _GITPUSH_TOGGLE()
+  gitpush:toggle()
+end
+
 local node = Terminal:new({ cmd = "node", hidden = true })
 
 function _NODE_TOGGLE()
