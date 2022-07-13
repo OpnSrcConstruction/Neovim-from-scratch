@@ -48,7 +48,7 @@ function _LAZYGIT_TOGGLE()
   lazygit:toggle()
 end
 
-local gitpush = Terminal:new({ cmd = "git push", hidden = true })
+local gitpush = Terminal:new({ cmd = "git push && git status", hidden = true })
 -- Added so I can now launch a terminal and insta-push my changes.
 function _GITPUSH_TOGGLE()
   gitpush:toggle()
@@ -94,7 +94,6 @@ local nmon = Terminal:new({ cmd = "nmon", hidden = true })
 function _NMON_TOGGLE()
   nmon:toggle()
 end
-
 -- Finally adding my own TT_TUI magic. Needs sudo exception to p/w require.
 local nethogs = Terminal:new({ cmd = "nethogs", hidden = true })
 
