@@ -70,8 +70,6 @@ return packer.startup(function(use)
 
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
-  use "lunarvim/colorschemes"                 -- A bunch of colorschemes you can try out.
-  use "lunarvim/darkplus.nvim"                -- Another Random color-scheme.
 
 -- cmp plugins:
   use "hrsh7th/nvim-cmp"                      -- The completion plugin
