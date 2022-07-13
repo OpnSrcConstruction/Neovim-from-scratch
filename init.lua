@@ -62,6 +62,3 @@ require "user.impatient"
 require "user.whichkey"
 -- Added Cheat TS-plugin.
 require "user.cheatsheet"
--- Added a file to initiate my emoji telescope settings.
-require "user.tsemoji"
--- Required for gh.

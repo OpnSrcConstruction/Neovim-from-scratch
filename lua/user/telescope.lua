@@ -5,9 +5,11 @@ end
 
 telescope.load_extension('media_files')
 -- Required for gh.
-require('telescope').load_extension('gh')
+telescope.load_extension('gh')
 -- Required for TS-changes.
-require('telescope').load_extension('changes')
+telescope.load_extension('changes')
+-- Needed to load the emoji telescope lens.
+telescope.load_extension("emoji")
 
 local actions = require "telescope.actions"
 
