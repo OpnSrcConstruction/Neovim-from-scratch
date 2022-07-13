@@ -184,7 +184,6 @@ local mappings = {
     p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
     i = { "<cmd>lua _IPYTHON_TOGGLE()<cr>", "I-Python" },
     m = { "<cmd>lua _NMON_TOGGLE()<cr>", "nMon" },
-    g = { "<cmd>lua _NETHOGS_TOGGLE()<cr>", "net-hoGs" },  -- Needs a sudo exception! TODO
     v = { "<cmd>lua _VIFM_TOGGLE()<cr>", "Vifm" },
     e = {
     name = "Empty-shell",
