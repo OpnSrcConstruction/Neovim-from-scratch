@@ -4,6 +4,10 @@ if not status_ok then
 end
 
 telescope.load_extension('media_files')
+-- Required for gh.
+require('telescope').load_extension('gh')
+-- Required for TS-changes.
+require('telescope').load_extension('changes')
 
 local actions = require "telescope.actions"
 
