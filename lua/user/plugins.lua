@@ -107,7 +107,8 @@ return packer.startup(function(use)
     "AckslD/nvim-neoclip.lua",
     requires = {
       -- you'll need at least one of these
-      -- {'nvim-telescope/telescope.nvim'},
+      {'nvim-telescope/telescope.nvim'},
+      {'kkharji/sqlite.lua', module = 'sqlite'},
       -- {'ibhagwan/fzf-lua'},
     },
     config = function()
