@@ -103,18 +103,7 @@ return packer.startup(function(use)
   -- Git:
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
-  use {
-    "AckslD/nvim-neoclip.lua",
-    requires = {
-      -- you'll need at least one of these
-      {'nvim-telescope/telescope.nvim'},
-      {'kkharji/sqlite.lua', module = 'sqlite'},
-      -- {'ibhagwan/fzf-lua'},
-    },
-    config = function()
-      require('neoclip').setup()
-    end,
-  }
+  use "tpope/vim-fugitive" -- Used mainly for diffing merge conflicts.
 
   -- Treesitter
   --   use {
