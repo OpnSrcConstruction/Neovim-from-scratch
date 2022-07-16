@@ -220,7 +220,7 @@
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)        -- Search for work-place diagnostics(errors).
   keymap("n", "<leader>tsac", "<cmd>Telescope autocommands<CR>", opts)       -- Search through loaded auto-commands I think.
   -- keymap("n", "<leader>tsmp", "<cmd>Telescope man_pages<CR>", opts)       -- Search through available man pages.
-  keymap("n", "<leader>tspj", "<cmd>Telescope projects<CR>", opts)           -- Search through ongoing projects, by f-system location.
+  -- keymap("n", "<leader>tspj", "<cmd>Telescope projects<CR>", opts)        -- Search through ongoing projects, by f-system location.
   keymap("n", "<leader>tvim", "<cmd>Telescope vim_options<CR>", opts)        -- Search through available vim options.
   -- keymap("n", "<leader>tsof", "<cmd>Telescope oldfiles<CR>", opts)        -- Search through Files of a project old w aest to newest.📁
   keymap("n", "<leader>tsft", "<cmd>Telescope filetypes<CR>", opts)          -- Search through File-types.📁
