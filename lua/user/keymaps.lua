@@ -286,8 +286,8 @@
   keymap("n", "<leader>ghwfr", "<cmd>Telescope gh run", opts)           -- View details about currently running Workflow-runs.
   -- Fuzzy-menus:
   -- keymap("n", "<leader>tsbf", "<cmd>Telescope buffers<CR>", opts)  -- Search through open buffers/tabs.
-  keymap("n", "<leader>tsreg", "<cmd>Telescope registers<CR>", opts)  -- Search through open buffer registers in the tree.
-  keymap("n", "<leader>tsmrk", "<cmd>Telescope marks<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
+  -- keymap("n", "<leader>tsreg", "<cmd>Telescope registers<CR>", opts)  -- Search through open buffer registers in the tree.
+  -- keymap("n", "<leader>tsmrk", "<cmd>Telescope marks<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tsjl", "<cmd>Telescope jumplist<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tchg", "<cmd>Telescope changes<CR>", opts)  -- Search the jump-list, of where your cursor recently moved.
   keymap("n", "<leader>tscht", "<cmd>Cheatsheet<CR>", opts)            -- Cheat-sheet Telescope plugin.
