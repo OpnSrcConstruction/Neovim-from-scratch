@@ -111,6 +111,7 @@ local mappings = {
     r = { "<cmd>Telescope registers<CR>", "Registers-menu" },
     m = { "<cmd>Telescope marks<CR>", "Marks-menu" },
     j = { "<cmd>Telescope jumplist<CR>", "Jumplist-menu" },
+    c = { "<cmd>Telescope changes<CR>", "Changes-menu" },
   },
   g = {
     name = "Git",
