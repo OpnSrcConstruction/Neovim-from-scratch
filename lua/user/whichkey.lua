@@ -110,6 +110,7 @@ local mappings = {
     b = { "<cmd>Telescope buffers<CR>", "Buffers-menu" },
     r = { "<cmd>Telescope registers<CR>", "Registers-menu" },
     m = { "<cmd>Telescope marks<CR>", "Marks-menu" },
+    j = { "<cmd>Telescope jumplist<CR>", "Jumplist-menu" },
   },
   g = {
     name = "Git",
