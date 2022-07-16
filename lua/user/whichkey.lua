@@ -179,6 +179,7 @@ local mappings = {
     e = { "<cmd>Telescope emoji<cr>", "Emoji" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
+    p = { "<cmd>Telescope projects<cr>", "Projects" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
