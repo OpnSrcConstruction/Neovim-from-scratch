@@ -253,7 +253,7 @@
   keymap("n", "<leader>tscp", "<cmd>Telescope<CR>", opts)  -- For searching through available telescope commands.
   keymap("n", "<leader>tsfd", "<cmd>Telescope find_files<cr>", opts) -- Search for files, but respecting .gitignore.
   keymap("n", "<leader>tslg", "<cmd>Telescope live_grep<cr>", opts) -- For rip-grepping(rg) through open project buffers.
-  keymap("n", "<leader>tskm", "<cmd>Telescope keymaps<CR>", opts) -- For searching Key-maps.
+  -- keymap("n", "<leader>tskm", "<cmd>Telescope keymaps<CR>", opts) -- For searching Key-maps.
   -- keymap("n", "<leader>tscmds", "<cmd>Telescope commands<CR>", opts) -- Search for available ex-mode commands.
   keymap("n", "<leader>tscmdh", "<cmd>Telescope command_history<CR>", opts) -- Search for available ex-mode commands.
   keymap("n", "<leader>tswd", "<cmd>Telescope diagnostics<CR>", opts)  -- Search for work-place diagnostics(errors).
