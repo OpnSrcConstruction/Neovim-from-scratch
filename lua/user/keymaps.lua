@@ -201,13 +201,10 @@
   -- q == quit
   -- ? == help-menu
 
-  keymap("n", "<leader>ipy3", ":lua _IPYTHON_TOGGLE()<CR>", opts)      -- Great sytem-monitoring tool.
-
-  keymap("n", "<leader>tre", ":UndotreeToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
-
-  keymap("n", "<leader>tbar", ":TagbarToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
-
-  keymap("n", "<leader>vifm", ":lua _VIFM_TOGGLE()<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
+  -- keymap("n", "<leader>ipy3", ":lua _IPYTHON_TOGGLE()<CR>", opts)      -- Great sytem-monitoring tool.
+  -- keymap("n", "<leader>tre", ":UndotreeToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
+  -- keymap("n", "<leader>tbar", ":TagbarToggle<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
+  -- keymap("n", "<leader>vifm", ":lua _VIFM_TOGGLE()<CR>", opts)      -- Amazing Vim Undoo-tree visualization tool.
 
 -- Git-Signs(lua-gutter):
 -- Hunk-navigation:
