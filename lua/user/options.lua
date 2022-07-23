@@ -32,6 +32,7 @@ local options = {
   expandtab = true,                                    -- Convert tabs into spaces.
   shiftwidth = 4,                                      -- The number of spaces inserted for each indentation
   tabstop = 4,                                         -- Insert 2 spaces for each tab.
+  softtabstop = 4,
   wrap = true,                                         -- Wrap my code-lines on the visible screen.
   guifont = "monospace:h17",                           -- The font used in graphical neovim applications.
 -- Search:
