@@ -31,8 +31,9 @@ local options = {
   smartindent = true,                                  -- Keep indention from line-to-line.
   expandtab = true,                                    -- Convert tabs into spaces.
   shiftwidth = 4,                                      -- The number of spaces inserted for each indentation
-  tabstop = 4,                                         -- Insert 2 spaces for each tab.
-  softtabstop = 4,
+  tabstop = 4,                                         -- Insert 4 spaces for each tab.
+  softtabstop = 4,                                     -- Related to tabstop I think.
+  scrolloff = 3,                                       -- Set some extra buffer space at the bottom of the window.
   wrap = true,                                         -- Wrap my code-lines on the visible screen.
   guifont = "monospace:h17",                           -- The font used in graphical neovim applications.
 -- Search:
