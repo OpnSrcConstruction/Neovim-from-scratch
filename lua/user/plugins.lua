@@ -67,7 +67,16 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim"       -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"                  -- I hope I don't have to totally rewrite my Leader bindings.
   use "vimwiki/vimwiki"                       -- Vimwiki is a personal wiki for Vim...
-
+use {
+  "folke/zen-mode.nvim",
+  config = function()
+    require("zen-mode").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
 -- Colors-schemes:
   use "rafi/awesome-vim-colorschemes"         -- Various vim-colour schemes.
 
