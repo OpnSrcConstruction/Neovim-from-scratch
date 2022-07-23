@@ -173,6 +173,12 @@
 -- #########################################################
   keymap("n", "<leader>aa", ":Alpha<CR>", opts)  -- Delete ALL marks:
 
+-- #######################
+-- ##  Toggle Zen-mode.  #
+-- #######################
+  keymap("n", "C-a", ":ZenMode<CR>", opts)  -- Toggle zen-mode in Normal-mode.
+  keymap("i", "C-a", ":ZenMode<CR>", opts)  -- Toggle zen-mode in Normal-mode.
+
 -- Toggle-term TUI-app maps:
   -- keymap("n", "<leader>lgIt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)   -- Maps L->lgt to lazygit.
   -- keymap("n", "<leader>ncdu", ":lua _NCDU_TOGGLE()<CR>", opts)      -- Maps L->ncdu to ncdu fs analyzer.
