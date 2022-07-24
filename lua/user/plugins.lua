@@ -87,6 +87,7 @@ return packer.startup(function(use)
 
 -- Markdown:  Disabled CoC & it's snippets, so I can get the md features from fully lua plugins.
 -- Also Got rid of prettier, b/c I'll eventually figure out Null-ls. TODO
+-- https://www.youtube.com/watch?v=cWiTg-ItdwA TODO
   -- use "SirVer/ultisnips"                        -- Ultimate snippet solution for MD.
   -- use {"neoclide/coc.nvim", branch = "release"} -- Code-of-Completion snippet engine.
   -- use "prettier/vim-prettier"                   -- For formatting. Might be unnecessary later b/c of nulls.
