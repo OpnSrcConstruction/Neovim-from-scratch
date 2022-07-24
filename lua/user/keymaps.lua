@@ -171,7 +171,7 @@
 -- #########################################################
 -- ##  Toggle Alpha for ascii comic relief & bookmarks.   ##
 -- #########################################################
-  keymap("n", "<leader>aa", ":Alpha<CR>", opts)  -- Delete ALL marks:
+  -- keymap("n", "<leader>aa", ":Alpha<CR>", opts)  -- Delete ALL marks: Unneeded, b/c now I have <L>->a to toggle Alpha.
 
 -- #######################
 -- ##  Toggle Zen-mode.  #
