@@ -100,11 +100,26 @@ telescope.setup {
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
         filetypes = {"png", "jpg", "mp4", "webp", "jpeg", "pdf"},
         find_cmd = "rg" -- find command (defaults to `fd`)
-      }
-    -- Your extension configuration goes here:
-    -- extension_name = {
-    --   extension_config_key = value,
-    -- }
-    -- please take a look at the readme of the extension you want to configure
+      },
+    gitmoji = {
+        action = function(entry)
+        -- entry = {
+        --    display = "🎨 Improve structure / format of the code.",
+        --    index = 1,
+        --    ordinal = "Improve structure / format of the code.",
+        --    value = "🎨"
+        -- }
+        -- vim.ui.input({ prompt = "Enter commit message: " .. entry.value .. " "}, function(msg)
+        vim.ui.input({ prompt = "Enter commit message: "}, function(msg)
+            if not msg then
+                return
+            end
+            -- vim.cmd(':G commit -m "' .. entry.value .. ' ' .. msg .. '"')
+            vim.cmd(':G commit -m "' .. msg .. '"')
+        end)
+    end,
+    },
   },
 }
+
+telescope.load_extension("gitmoji")

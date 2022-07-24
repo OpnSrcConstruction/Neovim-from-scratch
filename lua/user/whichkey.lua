@@ -114,7 +114,7 @@ local mappings = {
   },
   g = {
     name = "Git",
-    S = {
+    s = {
       name = "Signs",
         j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
         k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
@@ -132,13 +132,14 @@ local mappings = {
           "Diff",
         },
       },
-    l = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
-    p = { "<cmd>lua _GITPUSH_TOGGLE()<CR>", "Insta-Push" },
+    e = { "<cmd>Telescope gitmoji<cr>", "Emoji" },
+    f = { "<cmd>GitGutterFold<cr>", "Fold" },
+    l = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
+    p = { "<cmd>lua _GITPUSH_TOGGLE()<cr>", "Insta-Push" },
     o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
   },
-
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
