@@ -243,7 +243,7 @@
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<CR>", opts)       -- Lists stash items in current repository.
   keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts)    -- Lists branches in current repository.
   keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts)      -- Lists branches in current repository.
-  keymap("n", "<leader>tgmoji", "<cmd>lua require('Telescope').extensions.gitmoji.gitmoji()<CR>", opts)  -- Adds an E-moji to the commit.
+  -- keymap("n", "<leader>tgmoji", "<cmd>lua require('Telescope').extensions.gitmoji.gitmoji()<CR>", opts)  -- Adds an E-moji to the commit.
   -- Git-hub-cli...
   keymap("n", "<leader>ghgst", "<cmd>Telescope gh gist", opts)                -- https://cli.github.com/manual/gh_gist Manage Gists.
   keymap("n", "<leader>ghpr", "<cmd>Telescope gh pull_request", opts)         -- Manage Pull-requests...
