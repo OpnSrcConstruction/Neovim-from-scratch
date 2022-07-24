@@ -102,7 +102,8 @@ telescope.setup {
         find_cmd = "rg" -- find command (defaults to `fd`)
       },
     gitmoji = {
-        action = function(entry)
+        action = function()
+        -- action = function(entry)
         -- entry = {
         --    display = "🎨 Improve structure / format of the code.",
         --    index = 1,
