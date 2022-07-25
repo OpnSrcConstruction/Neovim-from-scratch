@@ -63,4 +63,4 @@ require "user.whichkey"
 -- Added Cheat TS-plugin.
 require "user.cheatsheet"
 -- Adding back TS.....
--- require "user.treesitter"
+require "user.treesitter"
