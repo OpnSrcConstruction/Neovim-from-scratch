@@ -200,19 +200,19 @@
 
 -- Git-Signs(lua-gutter):
 -- Hunk-navigation:
-  keymap("n", "<leader>gsnh", ":Gitsigns next_hunk<CR>", opts)  -- Move to next code-hunk.
-  keymap("n", "<leader>gsph", ":Gitsigns prev_hunk<CR>", opts)  -- Move to a previous code-hunk.
+  -- keymap("n", "<leader>gsnh", ":Gitsigns next_hunk<CR>", opts)  -- Move to next code-hunk.
+  -- keymap("n", "<leader>gsph", ":Gitsigns prev_hunk<CR>", opts)  -- Move to a previous code-hunk.
 
   keymap("n", "<leader>gssh", ":Gitsigns select_hunk<CR>", opts)      -- Select hunk in Visual-mode.
-  keymap("n", "<leader>gspvh", ":Gitsigns preview_hunk<CR>", opts)    -- Preview hunk-diff preview.
+  -- keymap("n", "<leader>gspvh", ":Gitsigns preview_hunk<CR>", opts) -- Preview hunk-diff preview.
   keymap("n", "<leader>gstd", ":Gitsigns toggle_deleted<CR>", opts)   -- Toggle recently deleted hunks.
   -- Great as a what did I just do toggle through git and NOT Undo/Redo.
-  keymap("n", "<leader>gsbl", ":Gitsigns blame_line<CR>", opts)           -- Runs blame_line.
-  keymap("n", "<leader>gssb", ":Gitsigns stage_buffer<CR>", opts)         -- Stage All hunks in current buffer.
+  -- keymap("n", "<leader>gsbl", ":Gitsigns blame_line<CR>", opts)        -- Runs blame_line.
+  -- keymap("n", "<leader>gssb", ":Gitsigns stage_buffer<CR>", opts)      -- Stage All hunks in current buffer.
   keymap("n", "<leader>gsrbi", ":Gitsigns reset_buffer_index<CR>", opts)  -- Unstage ALL hunks for current buffer/tab in the index.
   -- This runs a full file reset.
-  keymap("n", "<leader>gstgh", ":Gitsigns stage_hunk<CR>", opts)        -- Stage a single hunk under cursor.
-  keymap("n", "<leader>gsush", ":Gitsigns undo_stage_hunk<CR", opts)    -- Reset a staged hunk.
+  -- keymap("n", "<leader>gstgh", ":Gitsigns stage_hunk<CR>", opts)     -- Stage a single hunk under cursor.
+  -- keymap("n", "<leader>gsush", ":Gitsigns undo_stage_hunk<CR", opts) -- Reset a staged hunk.
   keymap("n", "<leader>gstwd", ":Gitsigns toggle_word_diff<CR>", opts)  -- Toggle word diff highlighting-mode.
   keymap("n", "<leader>gsqfl", ":Gitsigns setqflist<CR>", opts)         -- Populate the quickfix list with change-hunks.
   keymap("n", "<leader>gslls", ":Gitsigns setloclist<CR>", opts)        -- Populate the quickfix list with change-hunks.
