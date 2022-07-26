@@ -90,7 +90,6 @@ return packer.startup(function(use)
 -- https://www.youtube.com/watch?v=cWiTg-ItdwA TODO
   -- use "SirVer/ultisnips"                        -- Ultimate snippet solution for MD.
   -- use {"neoclide/coc.nvim", branch = "release"} -- Code-of-Completion snippet engine.
-  -- use "prettier/vim-prettier"                   -- For formatting. Might be unnecessary later b/c of nulls.
   -- use "honza/vim-snippets"                      -- Another snippet solution.
   use "vimwiki/vimwiki"                         -- Vimwiki is a personal wiki for Vim.
   use {
@@ -109,14 +108,11 @@ return packer.startup(function(use)
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
---   use({ "iamcck/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" },
--- })
-
 -- LSP:
   use "neovim/nvim-lspconfig"                 -- enable LSP
   use "williamboman/nvim-lsp-installer"       -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim"          -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim"       -- for formatters and linters TODO
+  use "jose-elias-alvarez/null-ls.nvim"       -- for formatters and linters.
 
 -- Telescope:
   use "nvim-telescope/telescope.nvim"
@@ -126,8 +122,8 @@ return packer.startup(function(use)
   --  :lua ('telescope').extensions.gitmoji.gitmoji()
   use "nvim-telescope/telescope-github.nvim"   -- Adds 4 github-cli telescope functions.
   use "LinArcX/telescope-changes.nvim"          -- Telescope wrapper for :changes.
-  -- TS cheatsheet plugin.
-  use "sudormrfbin/cheatsheet.nvim"
+  use "sudormrfbin/cheatsheet.nvim"  -- TS cheatsheet plugin.
+  
   -- Git:
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
@@ -139,6 +135,7 @@ return packer.startup(function(use)
       run = ":TSUpdate",
     }
     use "p00f/nvim-ts-rainbow"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
