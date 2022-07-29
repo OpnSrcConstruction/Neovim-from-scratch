@@ -105,7 +105,7 @@ local mappings = {
     u = { "<cmd>PackerUpdate<cr>", "Update" },
   },
   m = {
-    name = "Menus",
+    name = "vim-Menus",
     b = { "<cmd>Telescope buffers<CR>", "Buffers-menu" },
     r = { "<cmd>Telescope registers<CR>", "Registers-menu" },
     m = { "<cmd>Telescope marks<CR>", "Marks-menu" },
@@ -172,7 +172,7 @@ local mappings = {
     },
   },
   s = {
-    name = "Search",
+    name = "Telescope-Searches",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     e = { "<cmd>Telescope emoji<cr>", "Emoji" },
