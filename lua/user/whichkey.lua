@@ -121,14 +121,23 @@ local mappings = {
             p = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
             n = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
             P = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk" },
+            s = { "<cmd>lua require 'gitsigns'.select_hunk()<cr>", "select Hunk" },
             },
             b = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
-            r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
-            R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
-            s = {
+            r = {
+                name = "Reset",
+                h = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
+                b = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
+            },
+                s = {
                 name = "Stage",
-            h = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
-            b = { "<cmd>lua require 'gitsigns'.stage_buffer()<cr>", "Stage Buffer" },
+                h = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
+                b = { "<cmd>lua require 'gitsigns'.stage_buffer()<cr>", "Stage Buffer" },
+            },
+            t = {
+                name = "Toggle",
+                d = { "<cmd>Gitsigns toggle_deleted<cr>", "Deleted" },
+                w = { "<cmd>Gitsigns toggle_word_diff<cr>", "Word-diff" },
             },
             u = {
                 "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
