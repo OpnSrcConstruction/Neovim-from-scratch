@@ -234,12 +234,12 @@ keymap("n", "<leader>tsft", "<cmd>Telescope filetypes<CR>", opts) -- Search thro
 -- r in Normal-mode or <C-r> in insert mode to search for MRU(Most_Recently_Used) files.
 -- w in Normal-mode or <C-w> in insert mode to Change the CWD(Current_Working_Directory) of the selected project.
 -- Git...
-keymap("n", "<leader>tsgf", "<cmd>Telescope git_files<CR", opts) -- Searches through Git tracked files in this project.
-keymap("n", "<leader>tscmt", "<cmd>Telescope git_commits<CR>", opts) -- Searches through Git commits in this directory.
-keymap("n", "<leader>tsbcmt", "<cmd>Telescope git_bcommits<CR>", opts) -- Searches through Git commits in this current buffer.
-keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<CR>", opts) -- Lists stash items in current repository.
-keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts) -- Lists branches in current repository.
-keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts) -- Lists branches in current repository.
+-- keymap("n", "<leader>tsgf", "<cmd>Telescope git_files<CR>", opts) -- Searches through Git tracked files in this project.
+-- keymap("n", "<leader>tscmt", "<cmd>Telescope git_commits<CR>", opts) -- Searches through Git commits in this directory.
+-- keymap("n", "<leader>tsbcmt", "<cmd>Telescope git_bcommits<CR>", opts) -- Searches through Git commits in this current buffer.
+-- keymap("n", "<leader>tsgs", "<cmd>Telescope git_stash<cr>", opts) -- Lists stash items in current repository.
+-- keymap("n", "<leader>tsbr", "<cmd>Telescope git_branches<CR>", opts) -- Lists branches in current repository.
+-- keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts) -- Lists branches in current repository.
 -- keymap("n", "<leader>tgmoji", "<cmd>lua require('Telescope').extensions.gitmoji.gitmoji()<CR>", opts)  -- Adds an E-moji to the commit.
 -- Git-hub-cli...
 -- keymap("n", "<leader>ghgst", "<cmd>Telescope gh gist", opts)                -- https://cli.github.com/manual/gh_gist Manage Gists.

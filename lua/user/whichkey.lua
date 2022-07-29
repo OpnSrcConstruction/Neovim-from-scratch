@@ -169,8 +169,18 @@ local mappings = {
         c = {
             name = "Checkout",
             b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-            c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+            c = {
+                name = "Commits",
+                d = { "<cmd>Telescope git_commits<cr>", "Checkout Directory commit(s)" },
+                b = { "<cmd>Telescope git_bcommits<cr>", "Checkout Buffer commit(s)" },
+            },
         },
+        t = {
+            name = "Telescopes",
+            -- Searches through Git tracked filek in this project.
+            f = { "<cmd>Telescope git_files<cr>", "Search project files" },
+            s = { "<cmd>Telescope git_stash<cr>", "Search project stashes" },
+        }
     },
     l = {
         name = "LSP",
