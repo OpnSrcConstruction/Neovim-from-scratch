@@ -166,8 +166,11 @@ local mappings = {
         l = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
         p = { "<cmd>lua _GITPUSH_TOGGLE()<cr>", "Insta-Push" },
         o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-        b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-        c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+        c = {
+            name = "Checkout",
+            b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+            c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+        },
     },
     l = {
         name = "LSP",
