@@ -257,4 +257,4 @@ keymap("n", "<leader>tsgs", "<cmd>Telescope git_status<CR>", opts) -- Lists bran
 -- keymap("n", "<leader>tscht", "<cmd>Cheatsheet<CR>", opts)           -- Cheat-sheet Telescope plugin.
 -- keymap("n", "<leader>temoji", "<cmd>Telescope emoji<CR>", opts)     -- A great emoji-Picker. 😌
 
-keymap("n", "<leader>f", ":Format<cr>", opts)
+-- keymap("n", "<leader>f", ":Format<cr>", opts)
