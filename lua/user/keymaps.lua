@@ -173,8 +173,8 @@
 -- #######################
 -- ##  Toggle Zen-mode.  #
 -- #######################
-  keymap("n", "C-a", ":ZenMode<CR>", opts)  -- Toggle zen-mode in Normal-mode.
-  keymap("i", "C-a", ":ZenMode<CR>", opts)  -- Toggle zen-mode in Normal-mode.
+  -- keymap("n", "C-a", ":ZenMode<CR>", opts)  -- Toggle zen-mode in Normal-mode.
+  -- keymap("i", "C-a", ":ZenMode<CR>", opts)  -- Toggle zen-mode in Normal-mode.
 
 -- Toggle-term TUI-app maps:
   -- keymap("n", "<leader>lgIt", ":lua _LAZYGIT_TOGGLE()<CR>", opts)   -- Maps L->lgt to lazygit.
