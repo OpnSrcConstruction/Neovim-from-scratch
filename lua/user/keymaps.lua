@@ -206,7 +206,7 @@ keymap("n", "<leader>ilt", ":IndentBlanklineToggle<CR>", opts)
 -- Great as a what did I just do toggle through git and NOT Undo/Redo.
 -- keymap("n", "<leader>gsbl", ":Gitsigns blame_line<CR>", opts)        -- Runs blame_line.
 -- keymap("n", "<leader>gssb", ":Gitsigns stage_buffer<CR>", opts)      -- Stage All hunks in current buffer.
-keymap("n", "<leader>gsrbi", ":Gitsigns reset_buffer_index<CR>", opts) -- Unstage ALL hunks for current buffer/tab in the index.
+-- keymap("n", "<leader>gsrbi", ":Gitsigns reset_buffer_index<CR>", opts) -- Unstage ALL hunks for current buffer/tab in the index.
 -- This runs a full file reset.
 -- keymap("n", "<leader>gstgh", ":Gitsigns stage_hunk<CR>", opts)     -- Stage a single hunk under cursor.
 -- keymap("n", "<leader>gsush", ":Gitsigns undo_stage_hunk<CR", opts) -- Reset a staged hunk.
