@@ -119,11 +119,10 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope-media-files.nvim"
   use "xiyaowong/telescope-emoji.nvim" -- Cool emoji plugin. Esc --> <selection> <ENTER> Then press "* to paste.
   use "olacin/telescope-gitmoji.nvim"  -- Plugin for makin emojiful commits. P.s. Use the lua fct. below:
-  --  :lua ('telescope').extensions.gitmoji.gitmoji()
   use "nvim-telescope/telescope-github.nvim"   -- Adds 4 github-cli telescope functions.
   use "LinArcX/telescope-changes.nvim"          -- Telescope wrapper for :changes.
   use "sudormrfbin/cheatsheet.nvim"  -- TS cheatsheet plugin.
-  
+ 
   -- Git:
   -- Git-gutter like functionality in a lua-neo-vim plugin.
   use "lewis6991/gitsigns.nvim"
