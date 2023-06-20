@@ -19,3 +19,6 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+-- Abbreviations for manual text-replacements.
+-- Populated mostly with a top 100 list of commonly misspelled words.
+require "user.abbrs"
