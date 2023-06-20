@@ -1,50 +1,62 @@
+-- :help options
 local options = {
-  backup = false,                          -- creates a backup file
-  clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
-  cmdheight = 2,                           -- more space in the neovim command line for displaying messages
-  completeopt = { "menuone", "noselect" }, -- mostly just for cmp
-  conceallevel = 0,                        -- so that `` is visible in markdown files
-  fileencoding = "utf-8",                  -- the encoding written to a file
-  hlsearch = true,                         -- highlight all matches on previous search pattern
-  ignorecase = true,                       -- ignore case in search patterns
-  mouse = "a",                             -- allow the mouse to be used in neovim
-  pumheight = 10,                          -- pop up menu height
-  showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
-  showtabline = 2,                         -- always show tabs
-  smartcase = true,                        -- smart case
-  smartindent = true,                      -- make indenting smarter again
-  splitbelow = true,                       -- force all horizontal splits to go below current window
-  splitright = true,                       -- force all vertical splits to go to the right of current window
-  swapfile = false,                        -- creates a swapfile
-  -- termguicolors = true,                    -- set term gui colors (most terminals support this)
-  timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
-  undofile = true,                         -- enable persistent undo
-  updatetime = 300,                        -- faster completion (4000ms default)
-  writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-  expandtab = true,                        -- convert tabs to spaces
-  shiftwidth = 2,                          -- the number of spaces inserted for each indentation
-  tabstop = 2,                             -- insert 2 spaces for a tab
-  cursorline = true,                       -- highlight the current line
-  number = true,                           -- set numbered lines
-  relativenumber = false,                  -- set relative numbered lines
-  numberwidth = 4,                         -- set number column width to 2 {default 4}
-
-  signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
-  wrap = true,                             -- display lines as one long line
-  linebreak = true,                        -- companion to wrap, don't split words
-  scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
-  sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
-  whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
+-- Display settings:
+  fileencoding = "utf-8",                              -- The encoding written to a file.
+  showtabline = 2,                                     -- Always show tabs.
+  cmdheight = 2,                                       -- More space in the neovim command line, for displaying messages.
+  pumheight = 10,                                      -- Pop up menu height.
+  splitbelow = true,                                   -- Force all horizontal splits, to go below current window.
+  splitright = true,                                   -- Force all vertical splits, to go to the right of current window.
+-- Theme:
+  termguicolors = true,                                -- Set terminal GUI colors.
+  cursorline = true,                                   -- Highlight the current line.
+  cursorcolumn = true,                                 -- Enable a vertical column.
+  number = true,                                       -- Set numbered lines.
+  relativenumber = true,                               -- Set relative numbered lines.
+  numberwidth = 4,                                     -- set number line column width up to 4(default 4).
+  signcolumn = "yes",                                  -- Always show the sign column, or it would shift the text each time.
+-- Functionality:
+  mouse = "a",                                         -- Allow the mouse to be used in neovim.
+  backup = true,                                       -- Creates a backup file, before edits are written.
+  clipboard = "unnamedplus",                           -- Allows neovim to access the system clipboard.
+  swapfile = true,                                     -- Creates a swapfile.
+  timeoutlen = 1000,                                   -- Time to wait, for a mapped sequence to complete(in milliseconds).
+  undofile = true,                                     -- Enable persistent undo.
+  undodir = "~/.config/nvim/persistant_undo_history",  -- Sets the directory to store persistant-undo saves.
+  updatetime = 300,                                    -- Faster completion(4000ms default).
+  writebackup = true,                                  -- Write a backup file, before saving.
+  completeopt = { "menuone", "noselect" },             -- Mostly just for cmp. ???
+-- Text-formatting:
+  conceallevel = 0,                                    -- Added so `` is visible in markdown files.
+  smartindent = true,                                  -- Keep indention from line-to-line.
+  expandtab = true,                                    -- Convert tabs into spaces.
+  shiftwidth = 4,                                      -- The number of spaces inserted for each indentation
+  tabstop = 4,                                         -- Insert 4 spaces for each tab.
+  softtabstop = 4,                                     -- Related to tabstop I think.
+  scrolloff = 3,                                       -- Set some extra buffer space at the bottom of the window.
+  wrap = true,                                         -- Wrap my code-lines on the visible screen.
+  guifont = "monospace:h17",                           -- The font used in graphical neovim applications.
+-- Search:
+  hlsearch = true,                                     -- Highlight all matches on when searching.
+  incsearch = true,                                    -- Turn on incremental search highlighting.
+  ignorecase = true,                                   -- Ignore case in search patterns.
+  smartcase = false,                                   -- Overides ignore case, w/ capitals. Default = false.
+  hidden = true,                                       -- Saves all buffers before an exit. if hidden biffers exist.
 }
+-- A lua for-loop to loop through the above table of options.
+-- A table is a list, that is allowed key, value pairs.
+  for k, v in pairs(options) do
+    vim.opt[k] = v
+  end
 
-for k, v in pairs(options) do
-  vim.opt[k] = v
-end
+-- Did NOT fit well within the options loop , without throwing errors and disabling the loop.
+  vim.opt.shortmess:append "I"                    -- Set No Intro-message for Neo-vim.
 
--- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
-vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages
-vim.opt.iskeyword:append "-"                           -- hyphenated words recognized by searches
-vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
-vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
+-- vim.cmd Passes strings, that will be interpreted as vim-script.
+  vim.cmd "set whichwrap+=<,>,[,],h,l" -- This wraps lines with w/ h-l/<-|-> arrows in command/insert-mode.
+  vim.cmd [[set iskeyword+=-]] -- Will treat words with a dash as part of a single word.
 
+--Close-tag variable-settings:
+--vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
+--Close tags are set to insensitive, just-in-case.
+  vim.g.closetag_emptyTags_caseSensitive = 0
