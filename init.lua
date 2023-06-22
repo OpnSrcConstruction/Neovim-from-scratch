@@ -23,3 +23,5 @@ require "user.autocommands"
 -- Populated mostly with a top 100 list of commonly misspelled words.
 require "user.abbrs"
 require("stay-centered").setup() -- Eventually I will put this behind a pcall.
+
+-- TESTING --
