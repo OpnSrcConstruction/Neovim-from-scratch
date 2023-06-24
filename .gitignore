@@ -41,3 +41,4 @@ luac.out
 
 lazygit
 plugin/packer_compiled.lua
+node_modules/
