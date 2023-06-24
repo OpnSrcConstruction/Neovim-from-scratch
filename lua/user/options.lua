@@ -25,6 +25,7 @@ local options = {
   undodir = "~/.config/nvim/persistant_undo_history",  -- Sets the directory to store persistant-undo saves.
   updatetime = 300,                                    -- Faster completion(4000ms default).
   writebackup = true,                                  -- Write a backup file, before saving.
+  shada = { "!", "'100", "<50", "s100" },                       -- Enable the shada-file.
   completeopt = { "menuone", "noselect" },             -- Mostly just for cmp. ???
 -- Text-formatting:
   conceallevel = 0,                                    -- Added so `` is visible in markdown files.
