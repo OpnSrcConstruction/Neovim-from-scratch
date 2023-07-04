@@ -82,8 +82,14 @@ return packer.startup(function(use)
 
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
+    use "nvim-telescope/telescope-media-files.nvim"
+    use "xiyaowong/telescope-emoji.nvim" -- Cool emoji plugin. Esc --> <selection> <ENTER> Then press "* to paste.
+    use "olacin/telescope-gitmoji.nvim"  -- Plugin for makin emojiful commits. P.s. Use the lua fct. below:
+    use "nvim-telescope/telescope-github.nvim"   -- Adds 4 github-cli telescope functions.
+    use "LinArcX/telescope-changes.nvim"          -- Telescope wrapper for :changes.
+    use "sudormrfbin/cheatsheet.nvim"  -- TS cheatsheet plugin.
 
-	-- Treesitter
+    -- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
 		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
@@ -92,7 +98,7 @@ return packer.startup(function(use)
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
 
-    use { "arnamak/stay-centered.nvim" } -- TESTING
+    use { "arnamak/stay-centered.nvim" } -- Keeps the screen centered more or less.
 
     use {
   'rmagatti/auto-session',
