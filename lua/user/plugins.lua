@@ -88,7 +88,7 @@ return packer.startup(function(use)
     use "nvim-telescope/telescope-github.nvim"   -- Adds 4 github-cli telescope functions.
     use "LinArcX/telescope-changes.nvim"          -- Telescope wrapper for :changes.
     use "sudormrfbin/cheatsheet.nvim"  -- TS cheatsheet plugin.
-
+	
     -- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
@@ -98,10 +98,10 @@ return packer.startup(function(use)
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
 
-    use { "arnamak/stay-centered.nvim" } -- Keeps the screen centered more or less.
+    use { "arnamak/stay-centered.nvim" } -- TESTING
 
     use {
-  'rmagatti/auto-session',
+     'rmagatti/auto-session',
     config = function()
     require("auto-session").setup {
       log_level = "error",

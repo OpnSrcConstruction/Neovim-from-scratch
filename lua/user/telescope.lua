@@ -9,7 +9,9 @@ telescope.load_extension('gh')
 -- Required for TS-changes.
 telescope.load_extension('changes')
 -- Needed to load the emoji telescope lens.
-telescope.load_extension("emoji")
+telescope.load_extension('emoji')
+-- Needed to load the gitmoji telescope plugin.
+telescope.load_extension('gitmoji')
 
 local actions = require "telescope.actions"
 
@@ -120,8 +122,17 @@ telescope.setup {
         end)
     end,
     },
+    emoji = {
+      action = function(emoji)
+        -- argument emoji is a table.
+        -- {name="", value="", cagegory="", description=""}
+
+        vim.fn.setreg("*", emoji.value)
+        print([[Press p or "*p to paste this emoji]] .. emoji.value)
+
+        -- insert emoji when picked
+        vim.api.nvim_put({ emoji.value }, 'c', false, true)
+      end,
+    },
   },
 }
-
-telescope.load_extension("gitmoji")
- 
