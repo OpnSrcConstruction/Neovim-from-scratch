@@ -24,3 +24,4 @@ require "user.autocommands"
 require "user.abbrs"
 require "stay-centered"
 require "colorizer"  -- Adding in colorizer nvim plugin to bg colorize color-codes.
+require "rainbows"

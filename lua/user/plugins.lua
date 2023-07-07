@@ -57,6 +57,7 @@ return packer.startup(function(use)
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
 	use {"folke/which-key.nvim"}
     use {"norcalli/nvim-colorizer.lua"}   -- A great & fast lua color-code bg colorizer plugin.
+    use {"https://gitlab.com/HiPhish/rainbow-delimiters.nvim"}
 
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
