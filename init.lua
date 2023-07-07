@@ -23,3 +23,4 @@ require "user.autocommands"
 -- Populated mostly with a top 100 list of commonly misspelled words.
 require "user.abbrs"
 require "stay-centered"
+require "colorizer"  -- Adding in colorizer nvim plugin to bg colorize color-codes.
