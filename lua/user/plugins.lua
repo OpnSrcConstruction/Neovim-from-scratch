@@ -102,6 +102,17 @@ return packer.startup(function(use)
     use { "tpope/vim-surround" }    -- For changing the things, that surround other stuffs.
     use { "tpope/vim-fugitive" }    -- Amazing git functions so good they should be illegal.
 
+    -- Unique vanilla-vim plugins.
+    use { "mbbill/undotree" }  -- Visualize the divergent undo realities.
+    use { "preservim/tagbar" }  -- Parse HTML tags in a pop-out side-bar.
+    use {
+    'glacambre/firenvim',
+    run = function() vim.fn['firenvim#install'](0) end 
+}
+
+    -- Zen-mode...
+    use { "folke/zen-mode.nvim" } -- For distraction free editing.
+
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
 
