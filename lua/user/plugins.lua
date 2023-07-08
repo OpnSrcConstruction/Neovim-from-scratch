@@ -97,6 +97,11 @@ return packer.startup(function(use)
 		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
 	}
 
+    -- Tpope plugins...
+    use { "tpope/vim-repeat" }      -- Used by surround, sneak, and perhaps others.
+    use { "tpope/vim-surround" }    -- For changing the things, that surround other stuffs.
+    use { "tpope/vim-fugitive" }    -- Amazing git functions so good they should be illegal.
+
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
 
