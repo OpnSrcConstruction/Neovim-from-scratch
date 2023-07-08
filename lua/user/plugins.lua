@@ -105,6 +105,8 @@ return packer.startup(function(use)
     -- Unique vanilla-vim plugins.
     use { "mbbill/undotree" }  -- Visualize the divergent undo realities.
     use { "preservim/tagbar" }  -- Parse HTML tags in a pop-out side-bar.
+    use { "mg979/vim-visual-multi" }  -- For a more sublime feeling.
+
     use {
     'glacambre/firenvim',
     run = function() vim.fn['firenvim#install'](0) end 
