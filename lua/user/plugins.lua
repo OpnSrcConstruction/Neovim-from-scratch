@@ -84,12 +84,12 @@ return packer.startup(function(use)
 
 	-- Telescope
     use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
-    use "nvim-telescope/telescope-media-files.nvim"
-    use "xiyaowong/telescope-emoji.nvim" -- Cool emoji plugin. Esc --> <selection> <ENTER> Then press "* to paste.
-    use "olacin/telescope-gitmoji.nvim"  -- Plugin for makin emojiful commits. P.s. Use the lua fct. below:
-    use "nvim-telescope/telescope-github.nvim"   -- Adds 4 github-cli telescope functions.
-    use "LinArcX/telescope-changes.nvim"          -- Telescope wrapper for :changes.
-    use "sudormrfbin/cheatsheet.nvim"  -- TS cheatsheet plugin.
+    use { "nvim-telescope/telescope-media-files.nvim" }
+    use { "xiyaowong/telescope-emoji.nvim" }  -- Cool emoji plugin. Esc --> <selection> <ENTER> Then press "* to paste.
+    use { "olacin/telescope-gitmoji.nvim" }  -- Plugin for makin emojiful commits. P.s. Use the lua fct. below:
+    use { "nvim-telescope/telescope-github.nvim" }  -- Adds 4 github-cli telescope functions.
+    use { "LinArcX/telescope-changes.nvim" }         -- Telescope wrapper for :changes.
+    use { "sudormrfbin/cheatsheet.nvim" }  -- TS cheatsheet plugin.
 
     -- Treesitter
     use {
@@ -106,11 +106,16 @@ return packer.startup(function(use)
     use { "mbbill/undotree" }  -- Visualize the divergent undo realities.
     use { "preservim/tagbar" }  -- Parse HTML tags in a pop-out side-bar.
     use { "mg979/vim-visual-multi" }  -- For a more sublime feeling.
+    use { "alvan/vim-closetag" }  -- For working with HTML tags.
 
+    -- Fire-nvim embeds nvim in a browser buiffer.
     use {
     'glacambre/firenvim',
-    run = function() vim.fn['firenvim#install'](0) end 
+    run = function() vim.fn['firenvim#install'](0) end
 }
+
+    -- Leap plugin hops & leaps around your local*/or global buffs.
+    use { "ggandor/leap.nvim" }
 
     -- Zen-mode...
     use { "folke/zen-mode.nvim" } -- For distraction free editing.
