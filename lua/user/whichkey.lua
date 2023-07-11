@@ -239,6 +239,7 @@ local mappings = {
         i = { "<cmd>lua _IPYTHON_TOGGLE()<cr>", "I-Python" },
         m = { "<cmd>lua _NMON_TOGGLE()<cr>", "nMon" },
         v = { "<cmd>lua _VIFM_TOGGLE()<cr>", "Vifm" },
+        V = { "<cmd>lua _VIT_TOGGLE()<cr>", "Vit" },
         e = {
             name = "Empty-shell",
             f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },

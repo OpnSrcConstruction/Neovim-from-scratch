@@ -80,3 +80,9 @@ local nmon = Terminal:new({ cmd = "nmon", hidden = false })
 function _NMON_TOGGLE()
 	nmon:toggle()
 end
+
+local vit = Terminal:new({ cmd = "vit", hidden = false })
+
+function _VIT_TOGGLE()
+	vit:toggle()
+end
