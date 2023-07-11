@@ -108,7 +108,7 @@ return packer.startup(function(use)
     use { "mg979/vim-visual-multi" }  -- For a more sublime feeling.
     use { "alvan/vim-closetag" }  -- For working with HTML tags.
 
-    -- Fire-nvim embeds nvim in a browser buiffer.
+    -- Fire-nvim embeds nvim in a browser buffer.
     use {
     'glacambre/firenvim',
     run = function() vim.fn['firenvim#install'](0) end
