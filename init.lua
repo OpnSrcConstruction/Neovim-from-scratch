@@ -22,7 +22,9 @@ require "user.autocommands"
 -- Abbreviations for manual text-replacements.
 -- Populated mostly with a top 100 list of commonly misspelled words.
 require "user.abbrs"
-require "stay-centered"
-require "colorizer"  -- Adding in colorizer nvim plugin to bg colorize color-codes.
+require "user.colorizer"  -- Adding in colorizer nvim plugin to bg colorize color-codes.
 --  require "rainbows"
 require('leap').add_default_mappings()
+require("stay-centered").setup({
+  skip_filetypes = {"typescript"},
+})
