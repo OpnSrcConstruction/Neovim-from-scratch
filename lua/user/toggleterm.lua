@@ -86,3 +86,9 @@ local vit = Terminal:new({ cmd = "vit", hidden = false })
 function _VIT_TOGGLE()
 	vit:toggle()
 end
+
+local nethogs = Terminal:new({ cmd = "sudo nethogs", hidden = false })
+-- Eventually I will have to add nethogs to my sodoers config.
+function _NETHOGS_TOGGLE()
+	nethogs:toggle()
+end
