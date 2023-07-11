@@ -231,10 +231,11 @@ local mappings = {
 
     t = {
         name = "Terminal",
+        b = { "<cmd>lua _BTOP_TOGGLE()<cr>", "Btop" },
         j = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node.Js" },
-        n = { "<cmd>lua _NCDU_TOGGLE()<cr>", "Ncdu" },
+        -- n = { "<cmd>lua _NCDU_TOGGLE()<cr>", "Ncdu" }, -- Was NOT working.
         h = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-        p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
+        p = { "<cmd>lua _PYTHON3_TOGGLE()<cr>", "Python3" },
         i = { "<cmd>lua _IPYTHON_TOGGLE()<cr>", "I-Python" },
         m = { "<cmd>lua _NMON_TOGGLE()<cr>", "nMon" },
         v = { "<cmd>lua _VIFM_TOGGLE()<cr>", "Vifm" },

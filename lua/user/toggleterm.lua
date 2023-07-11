@@ -51,10 +51,10 @@ function _NODE_TOGGLE()
 	node:toggle()
 end
 
-local ncdu = Terminal:new({ cmd = "ncdu", hidden = false })
+local btop = Terminal:new({ cmd = "btop", hidden = false })
 
-function _NCDU_TOGGLE()
-	ncdu:toggle()
+function _BTOP_TOGGLE()
+	btop:toggle()
 end
 
 local htop = Terminal:new({ cmd = "htop", hidden = false })
@@ -63,14 +63,20 @@ function _HTOP_TOGGLE()
 	htop:toggle()
 end
 
-local python = Terminal:new({ cmd = "ipython3", hidden = false })
+local python3 = Terminal:new({ cmd = "python3", hidden = false })
 
-function _PYTHON_TOGGLE()
-	python:toggle()
+function _PYTHON3_TOGGLE()
+	python3:toggle()
 end
 
 local vifm = Terminal:new({ cmd = "vifm", hidden = false })
 
 function _VIFM_TOGGLE()
 	vifm:toggle()
+end
+
+local nmon = Terminal:new({ cmd = "nmon", hidden = false })
+
+function _NMON_TOGGLE()
+	nmon:toggle()
 end
