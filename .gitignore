@@ -45,3 +45,5 @@ node_modules/
 
 # for ignoring the vim backup-files.
 *~
+
+$HOME
