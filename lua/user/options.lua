@@ -61,3 +61,6 @@ local options = {
 --vim.g.closetag_filenames = { "*.html", "*.xhtml", "*.phtml" }
 --Close tags are set to insensitive, just-in-case.
   vim.g.closetag_emptyTags_caseSensitive = 0
+
+-- bracket completion vim hack.
+-- inoremap < <><esc>i
