@@ -22,6 +22,9 @@ vim.g.maplocalleader = " "
 --  term_mode = "t",
 --  command_mode = "c",
 
+-- a small re-map for adding angle bracket completion.
+-- keymap("i", "<", "<><esc>i")
+
 -- Normal --
 -- Better window navigation
 -- Exactly what I would have done...
