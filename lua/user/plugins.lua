@@ -149,6 +149,29 @@ return packer.startup(function(use)
   end
 }
 
+use {
+    "nvim-neorg/neorg",
+    tag = "5.0.0",
+    config = function()
+        require('neorg').setup {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                ["core.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "/mnt/d/Documents/Notes/notes",
+                            lists = "/mnt/d/Documents/Notes/Lists",
+                        },
+                    },
+                },
+            },
+        }
+    end,
+    -- run = ":Neorg sync-parsers",
+    requires = "nvim-lua/plenary.nvim",
+}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
